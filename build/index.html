@@ -7,6 +7,93 @@
   </head>
   <body>
     <div class="wrapper">
+      <section class="signin__block">
+        <div class="container">
+          <form class="popup__form sign__form"><a class="link popup__close" href="#"></a>
+            <h4 class="login__title sign__form_title">Регистрация</h4>
+            <div class="sign__form_step1">
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="login" placeholder="Минимально 3 символа"><span class="popup__form_text"><span class="red__text">*</span>Логин</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="email" name="email" placeholder="Введите вашу почту"><span class="popup__form_text"><span class="red__text">*</span>Почта</span>
+              </label>
+              <label class="popup__form_label"> 
+                <input class="popup__form_input" type="password" name="pass" placeholder="Минимум 6 символов"><span class="popup__form_text"><span class="red__text">*</span>Пароль</span>
+              </label>
+              <label class="popup__form_label"> 
+                <input class="popup__form_input" type="password" placeholder="Повторите пароль"><span class="popup__form_text"><span class="red__text">*</span>Повторите пароль</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="name" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Фамилия</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="surname" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Имя</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="patronymic" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Отчество</span>
+              </label>
+            </div>
+            <div class="signin__form_step2">
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="address" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес по прописке</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="email" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
+              </label>
+              <div class="sign__form__text"> 
+                <p><span class="red__text">Внимание!</span>При вводе адреса по прописке, адрес автоматически копируется в поле адреса доставки. Если эти адреса отличаются, не забудьте указать адрес фактического проживания!</p>
+              </div>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="email" name="delivery" placeholder="Введите ваш номер телефона"><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
+              </label>
+              <label class="popup__form_label popup__form_label_checkbox">
+                <input class="popup__form_checkbox" type="checkbox">
+                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
+              </label>
+              <div class="sign__form__text"> 
+                <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
+              </div>
+            </div>
+            <div class="signin__form_step3">
+              <div class="sign__form__text">
+                <p>Cкан <span class="bold__text">ID-карты </span>лицевая сторона:</p>
+                <div class="signin__file__block">
+                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
+                  </figure>
+                  <label class="signin__label">
+                    <input class="signin__input_file" type="file">
+                    <div class="signin__file__fake">Выбрать файл</div>
+                  </label>
+                </div>
+              </div>
+              <div class="sign__form__text">
+                <p>Cкан <span class="bold__text">ID-карты </span>обратная сторона:   </p>
+                <div class="signin__file__block">
+                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
+                  </figure>
+                  <label class="signin__label">
+                    <input class="signin__input_file" type="file">
+                    <div class="signin__file__fake">Выбрать файл</div>
+                  </label>
+                </div>
+              </div>
+              <label class="popup__form_label popup__form_label_checkbox">
+                <input class="popup__form_checkbox" type="checkbox">
+                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span>
+              </label>
+              <div class="sign__form__text"> 
+                <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
+              </div>
+            </div>
+            <div class="progressbar signin__progressbar">
+              <div class="progress__point signin__progress_point"></div><span class="progress__text">Шаг 1</span>
+            </div><a class="link popup__button signin__popup_button" href="#">Продолжить</a>
+          </form>
+        </div>
+      </section>
       <div id="frame">
         <div class="slidee">         
           <section class="first__section">
@@ -29,20 +116,20 @@
                       <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
                           <div class="round__button round__button_login"></div></a></li>
                     </ul>
-                    <div class="login__block"> <a class="link login__close" href="#"></a>
+                    <div class="popup login__popup"><a class="link popup__close" href="#"></a>
                       <h4 class="login__title">Вход</h4>
-                      <form class="login__form">
-                        <label class="login__label">
-                          <input class="login__input" type="text" name="login" placeholder="Введите ваш логин"><span class="input__title">Логин</span>
+                      <form class="popup__form">
+                        <label class="popup__form_label">
+                          <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
                         </label>
-                        <label class="login__label"> 
-                          <input class="login__input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="input__title">Пароль</span>
+                        <label class="popup__form_label"> 
+                          <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
                         </label>
                         <ul class="list login__form_links">
                           <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
                           <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
                         </ul>
-                        <button class="login__submit" type="submit">Войти</button>
+                        <button class="popup__button" type="submit">Войти</button>
                       </form>
                     </div>
                   </li>
@@ -60,10 +147,41 @@
                     </div>
                   </li>
                   <li class="first__bottom_item first__bottom_item_right">
-                    <button class="round__button round__button_calc"></button>
-                    <div class="first__bottom_right_text">
-                      <p>Калькулятор  </p>
-                    </div>
+                    <div class="popup calculator__popup"><a class="link popup__close" href="#"></a>
+                      <h4 class="login__title calculator__title">Калькулятор</h4>
+                      <div class="popup__info">
+                        <h5 class="yellow__text calculator__subtitle">Важно!</h5>
+                        <article class="calculator__text">
+                          <p>При отправке легких, но крупногабаритных (объемных) грузов стоимость доставки рассчитывается по "объемному весу" в соответствии с формулой: </p>
+                          <p>Длина (см) х ширина (см) х высота (см) / 6000 = объемный вес (кг).</p>
+                        </article>
+                        <div class="calculator__schema"> <img src="images/calculator.svg" alt="schema"><img src="images/schema.svg" alt="formulas"></div><a class="link popup__button popup__button_continue" href="#">Продолжить</a>
+                      </div>
+                      <div class="popup__calc"> 
+                        <form class="popup__form">
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
+                          </label>
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text"><span class="popup__form_text">Высота</span>
+                          </label>
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text"><span class="popup__form_text">Ширина</span>
+                          </label>
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text"><span class="popup__form_text">Длинна</span>
+                          </label>
+                          <article class="popup__form_desc"> 
+                            <p>Коробка размером 111 x 111 x 111 (см.) и весом 10кг. будет доставляться по объемному весу, который составляет 227.94 кг.</p>
+                          </article>
+                          <button class="popup__button" type="submit">Рассчитать</button>
+                        </form>
+                      </div>
+                    </div><a class="link first__bottom_link" href="#">
+                      <div class="round__button round__button_calc"></div>
+                      <div class="first__bottom_right_text">
+                        <p>Калькулятор </p>
+                      </div></a>
                   </li>
                 </ul>
               </div>
@@ -104,10 +222,41 @@
                   <ul class="list first__bottom_list">
                     <li></li>
                     <li class="first__bottom_item first__bottom_item_right">
-                      <button class="round__button round__button_calc"></button>
-                      <div class="first__bottom_right_text">
-                        <p>Калькулятор</p>
-                      </div>
+                      <div class="popup calculator__popup"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title calculator__title">Калькулятор</h4>
+                        <div class="popup__info">
+                          <h5 class="yellow__text calculator__subtitle">Важно!</h5>
+                          <article class="calculator__text">
+                            <p>При отправке легких, но крупногабаритных (объемных) грузов стоимость доставки рассчитывается по "объемному весу" в соответствии с формулой: </p>
+                            <p>Длина (см) х ширина (см) х высота (см) / 6000 = объемный вес (кг).</p>
+                          </article>
+                          <div class="calculator__schema"> <img src="images/calculator.svg" alt="schema"><img src="images/schema.svg" alt="formulas"></div><a class="link popup__button popup__button_continue" href="#">Продолжить</a>
+                        </div>
+                        <div class="popup__calc"> 
+                          <form class="popup__form">
+                            <label class="popup__form_label">
+                              <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
+                            </label>
+                            <label class="popup__form_label">
+                              <input class="popup__form_input" type="text"><span class="popup__form_text">Высота</span>
+                            </label>
+                            <label class="popup__form_label">
+                              <input class="popup__form_input" type="text"><span class="popup__form_text">Ширина</span>
+                            </label>
+                            <label class="popup__form_label">
+                              <input class="popup__form_input" type="text"><span class="popup__form_text">Длинна</span>
+                            </label>
+                            <article class="popup__form_desc"> 
+                              <p>Коробка размером 111 x 111 x 111 (см.) и весом 10кг. будет доставляться по объемному весу, который составляет 227.94 кг.</p>
+                            </article>
+                            <button class="popup__button" type="submit">Рассчитать</button>
+                          </form>
+                        </div>
+                      </div><a class="link first__bottom_link" href="#">
+                        <div class="round__button round__button_calc"></div>
+                        <div class="first__bottom_right_text">
+                          <p>Калькулятор </p>
+                        </div></a>
                     </li>
                   </ul>
                 </div>
@@ -185,20 +334,20 @@
                       <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
                           <div class="round__button round__button_login"></div></a></li>
                     </ul>
-                    <div class="login__block"> <a class="link login__close" href="#"></a>
+                    <div class="popup login__popup"><a class="link popup__close" href="#"></a>
                       <h4 class="login__title">Вход</h4>
-                      <form class="login__form">
-                        <label class="login__label">
-                          <input class="login__input" type="text" name="login" placeholder="Введите ваш логин"><span class="input__title">Логин</span>
+                      <form class="popup__form">
+                        <label class="popup__form_label">
+                          <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
                         </label>
-                        <label class="login__label"> 
-                          <input class="login__input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="input__title">Пароль</span>
+                        <label class="popup__form_label"> 
+                          <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
                         </label>
                         <ul class="list login__form_links">
                           <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
                           <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
                         </ul>
-                        <button class="login__submit" type="submit">Войти</button>
+                        <button class="popup__button" type="submit">Войти</button>
                       </form>
                     </div>
                   </li>
@@ -268,20 +417,20 @@
                       <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
                           <div class="round__button round__button_login"></div></a></li>
                     </ul>
-                    <div class="login__block"> <a class="link login__close" href="#"></a>
+                    <div class="popup login__popup"><a class="link popup__close" href="#"></a>
                       <h4 class="login__title">Вход</h4>
-                      <form class="login__form">
-                        <label class="login__label">
-                          <input class="login__input" type="text" name="login" placeholder="Введите ваш логин"><span class="input__title">Логин</span>
+                      <form class="popup__form">
+                        <label class="popup__form_label">
+                          <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
                         </label>
-                        <label class="login__label"> 
-                          <input class="login__input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="input__title">Пароль</span>
+                        <label class="popup__form_label"> 
+                          <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
                         </label>
                         <ul class="list login__form_links">
                           <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
                           <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
                         </ul>
-                        <button class="login__submit" type="submit">Войти</button>
+                        <button class="popup__button" type="submit">Войти</button>
                       </form>
                     </div>
                   </li>
