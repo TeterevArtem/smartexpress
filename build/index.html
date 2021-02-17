@@ -3,95 +3,123 @@
   <head>
     <meta charset="utf-8">
     <title>Smart Express</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <section class="signin__block">
+      <section class="signin__block popup">
         <div class="container">
           <form class="popup__form sign__form"><a class="link popup__close" href="#"></a>
             <h4 class="login__title sign__form_title">Регистрация</h4>
-            <div class="sign__form_step1">
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="login" placeholder="Минимально 3 символа"><span class="popup__form_text"><span class="red__text">*</span>Логин</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="email" name="email" placeholder="Введите вашу почту"><span class="popup__form_text"><span class="red__text">*</span>Почта</span>
-              </label>
-              <label class="popup__form_label"> 
-                <input class="popup__form_input" type="password" name="pass" placeholder="Минимум 6 символов"><span class="popup__form_text"><span class="red__text">*</span>Пароль</span>
-              </label>
-              <label class="popup__form_label"> 
-                <input class="popup__form_input" type="password" placeholder="Повторите пароль"><span class="popup__form_text"><span class="red__text">*</span>Повторите пароль</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="name" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Фамилия</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="surname" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Имя</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="patronymic" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Отчество</span>
-              </label>
-            </div>
-            <div class="signin__form_step2">
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="address" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес по прописке</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="email" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
-              </label>
-              <div class="sign__form__text"> 
-                <p><span class="red__text">Внимание!</span>При вводе адреса по прописке, адрес автоматически копируется в поле адреса доставки. Если эти адреса отличаются, не забудьте указать адрес фактического проживания!</p>
+            <div class="sign__form_steps">
+              <div class="signin__form_step active">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="login" placeholder="Минимально 3 символа" required><span class="popup__form_text"><span class="red__text">*</span>Логин</span>
+                </label>
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="email" name="email" placeholder="Введите вашу почту" required><span class="popup__form_text"><span class="red__text">*</span>Почта</span>
+                </label>
+                <label class="popup__form_label"> 
+                  <input class="popup__form_input" type="password" name="pass" placeholder="Минимум 6 символов" required><span class="popup__form_text"><span class="red__text">*</span>Пароль</span>
+                </label>
+                <label class="popup__form_label"> 
+                  <input class="popup__form_input" type="password" placeholder="Повторите пароль" required><span class="popup__form_text"><span class="red__text">*</span>Повторите пароль</span>
+                </label>
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="name" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Фамилия</span>
+                </label>
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="surname" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Имя</span>
+                </label>
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="patronymic" placeholder="Используйте только кириллицу"><span class="popup__form_text">Отчество</span>
+                </label>
               </div>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="email" name="delivery" placeholder="Введите ваш номер телефона"><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
-              </label>
-              <label class="popup__form_label popup__form_label_checkbox">
-                <input class="popup__form_checkbox" type="checkbox">
-                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
-              </label>
-              <div class="sign__form__text"> 
-                <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
-              </div>
-            </div>
-            <div class="signin__form_step3">
-              <div class="sign__form__text">
-                <p>Cкан <span class="bold__text">ID-карты </span>лицевая сторона:</p>
-                <div class="signin__file__block">
-                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
-                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
-                  </figure>
-                  <label class="signin__label">
-                    <input class="signin__input_file" type="file">
-                    <div class="signin__file__fake">Выбрать файл</div>
-                  </label>
+              <div class="signin__form_step">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="address" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес по прописке</span>
+                </label>
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="email" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
+                </label>
+                <div class="sign__form__text"> 
+                  <p><span class="red__text">Внимание!</span>При вводе адреса по прописке, адрес автоматически копируется в поле адреса доставки. Если эти адреса отличаются, не забудьте указать адрес фактического проживания!</p>
+                </div>
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="email" name="delivery" placeholder="Введите ваш номер телефона"><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
+                </label>
+                <label class="popup__form_label popup__form_label_checkbox">
+                  <input class="popup__form_checkbox" type="checkbox">
+                  <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
+                </label>
+                <div class="sign__form__text"> 
+                  <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
                 </div>
               </div>
-              <div class="sign__form__text">
-                <p>Cкан <span class="bold__text">ID-карты </span>обратная сторона:   </p>
-                <div class="signin__file__block">
-                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
-                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
-                  </figure>
-                  <label class="signin__label">
-                    <input class="signin__input_file" type="file">
-                    <div class="signin__file__fake">Выбрать файл</div>
-                  </label>
+              <div class="signin__form_step">
+                <div class="sign__form__text">
+                  <p>Cкан <span class="bold__text">ID-карты </span>лицевая сторона:</p>
+                  <div class="signin__file__block">
+                    <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                      <figcaption class="signin__photo_caption">Нет фото</figcaption>
+                    </figure>
+                    <label class="signin__label">
+                      <input class="signin__input_file" type="file">
+                      <div class="signin__file__fake">Выбрать файл</div>
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <label class="popup__form_label popup__form_label_checkbox">
-                <input class="popup__form_checkbox" type="checkbox">
-                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span>
-              </label>
-              <div class="sign__form__text"> 
-                <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
+                <div class="sign__form__text">
+                  <p>Cкан <span class="bold__text">ID-карты </span>обратная сторона:   </p>
+                  <div class="signin__file__block">
+                    <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                      <figcaption class="signin__photo_caption">Нет фото</figcaption>
+                    </figure>
+                    <label class="signin__label">
+                      <input class="signin__input_file" type="file">
+                      <div class="signin__file__fake">Выбрать файл</div>
+                    </label>
+                  </div>
+                </div>
+                <label class="popup__form_label popup__form_label_checkbox">
+                  <input class="popup__form_checkbox" type="checkbox">
+                  <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span>
+                </label>
+                <div class="sign__form__text"> 
+                  <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
+                </div>
               </div>
             </div>
             <div class="progressbar signin__progressbar">
               <div class="progress__point signin__progress_point"></div><span class="progress__text">Шаг 1</span>
             </div><a class="link popup__button signin__popup_button" href="#">Продолжить</a>
           </form>
+          <div class="popup__form sign__form success__popup"><a class="link popup__close" href="#"></a>
+            <h4 class="login__title sign__form_title">Регистрация</h4>
+            <div class="success__image"> <img src="images/svg/sprite.svg#success" alt="success icon"></div>
+            <div class="sign__form__text sign__form__text_p0">
+              <p>Вам было выслано письмо на почту и код-активации используйте их для того чтобы завершить регистрацию!</p>
+            </div>
+            <div class="success__main_image"> <img src="images/MacBook.svg" alt="macbook photo"></div>
+          </div>
+          <div class="popup__form sign__form activate__popup"> <a class="link popup__close" href="#"></a>
+            <h4 class="login__title sign__form_title activate__title">Активация учетной записи</h4>
+            <div class="activate__image"> <img src="images/svg/sprite.svg#round_mail" alt="email icon"></div>
+            <div class="activate__bold_text"> 
+              <p>Было отправлено SMS на номер 996556566818</p>
+            </div>
+            <div class="activate__form_text">
+              <p>Дождитесь сообщения с пин кодом, затем введите его в нижерасположенное поле и нажмите кнопку подтвердить:</p>
+            </div>
+            <form class="activate__form">
+              <label class="popup__form_label activate__form_label">
+                <input class="popup__form_input" type="text" name="pin" placeholder="Введите 4-х значный код"><span class="popup__form_text">Пин-код</span>
+              </label>
+              <button class="popup__button signin__popup_button" type="submit">Подтвердить</button>
+            </form>
+          </div>
         </div>
       </section>
       <div id="frame">
