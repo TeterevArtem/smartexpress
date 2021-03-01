@@ -125,7 +125,7 @@
         </div>
       </section>
       <div class="swiper-wrapper">
-        <div class="swiper-slide">        
+        <div class="swiper-slide">
           <section class="first__section">
             <div class="container">
               <header class="header">
@@ -133,7 +133,7 @@
                   <li class="header__item">
                     <ul class="list contacts__list">
                       <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_phone"></div><span class="header__link_text">+996 550 237 676</span></a></li>
+                          <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
                       <li class="contacts__item"><a class="link contacts__link" href="#">
                           <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
                     </ul>
@@ -175,7 +175,9 @@
                 </ul>
               </header>
               <div class="main first__main">
-                <div class="map__container"><img src="images/map.svg" alt="map"></div>
+                <div class="map__container">
+                  <div class="map"></div>
+                </div>
                 <h2 class="first__page_title">Мы доставим ваши посылки из:</h2>
                 <h2 class="first__page_title">США, Российской Федерации, Китая, ЕС, Турции</h2>
                 <ul class="list first__bottom_list">
@@ -198,6 +200,15 @@
                       </div>
                       <div class="popup__calc"> 
                         <form class="popup__form">
+                          <label class="popup__form_label">
+                            <select class="popup__form_input">
+                              <option value="usa" name="usa">USA</option>
+                              <option value="turkey" name="turkey">Turkey</option>
+                              <option value="russia" name="russia">Russia</option>
+                              <option value="es" name="es">EuroUnion</option>
+                              <option value="china" name="china">China</option>
+                            </select><span class="popup__form_text">Страна</span>
+                          </label>
                           <label class="popup__form_label">
                             <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
                           </label>
@@ -243,7 +254,6 @@
                   </ul>
                 </div>
               </main>
-              <div class="footer__container"></div>
             </div>
           </section>
         </div>
@@ -295,6 +305,15 @@
                         </div>
                         <div class="popup__calc"> 
                           <form class="popup__form">
+                            <label class="popup__form_label">
+                              <select class="popup__form_input">
+                                <option value="usa" name="usa">USA</option>
+                                <option value="turkey" name="turkey">Turkey</option>
+                                <option value="russia" name="russia">Russia</option>
+                                <option value="es" name="es">EuroUnion</option>
+                                <option value="china" name="china">China</option>
+                              </select><span class="popup__form_text">Страна</span>
+                            </label>
                             <label class="popup__form_label">
                               <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
                             </label>
@@ -392,7 +411,7 @@
                   <li class="header__item">
                     <ul class="list contacts__list">
                       <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_phone"></div><span class="header__link_text">+996 550 237 676</span></a></li>
+                          <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
                       <li class="contacts__item"><a class="link contacts__link" href="#">
                           <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
                     </ul>
@@ -432,8 +451,8 @@
                 </form><span class="form__desc">Введите как минимум 8 последних знаков Вашего номера и нажмите <span class="yellow__text">"ОТСЛЕДИТЬ"</span></span>
                 <h2 class="page__title fourth__title fouth__title_news">Новости</h2>
                 <div class="swiper-news">
-                  <ul class="list news__list">
-                    <li class="news__item active">
+                  <ul class="list news__list swiper-wrapper">
+                    <li class="news__item active swiper-slide">
                       <h5 class="news__title">Изменение дня отправки из США</h5>
                       <div class="news__info"> <span class="news__date">07.01.2021</span><span class="news__author">Опубликовал - CEO</span></div>
                       <div class="news__image"> <img src="images/news/image1.png" alt="news image"></div>
@@ -441,7 +460,7 @@
                         <p>С этой недели отправка из США будет осуществляться по вторникам, а не по четвергам. В отправку будут попадать посылки, поступившие на склад с понедельника по пятницу предыдущей недели.</p>
                       </article>
                     </li>
-                    <li class="news__item">
+                    <li class="news__item swiper-slide">
                       <h5 class="news__title">График работы курьеров и офиса</h5>
                       <div class="news__info"> <span class="news__date">29.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
                       <div class="news__image"> <img src="images/news/image2.png" alt="news image"></div>
@@ -449,7 +468,7 @@
                         <p>С 30 декабря по 4 января курьеры не будут осуществлять доставку. Это связанно с дорожной обстановкой в предпраздничные дни и с самим праздником. Офис будет работать в штатном режиме, кроме 31 декабря. В этот день офис открыт с 10 до 15 часов, 1 по 4 января – выходные.</p>
                       </article>
                     </li>
-                    <li class="news__item">
+                    <li class="news__item swiper-slide">
                       <h5 class="news__title">График работы складов</h5>
                       <div class="news__info"> <span class="news__date">13.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
                       <div class="news__image"> <img src="images/news/image3.png" alt="news image"></div>
@@ -457,7 +476,7 @@
                         <p>Склад в США не будет работать 24 и 25 декабря, а также с 31 декабря по 4 января, в Турции и России с 31 декабря по 6 января. В эти периоды НИКТО принимать посылки НЕ СМОЖЕТ! Склад в Китае работает в прежнем режиме.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptatem sunt vel reiciendis voluptas cupiditate repellendus modi veniam dignissimos suscipit officia, quas vitae exercitationem assumenda doloribus et, iste, maxime odit?</p>
                       </article>
                     </li>
-                    <li class="news__item">
+                    <li class="news__item swiper-slide">
                       <h5 class="news__title">Важная информация</h5>
                       <div class="news__info"> <span class="news__date">01.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
                       <div class="news__image"> <img src="images/news/image4.png" alt="news image"></div>
@@ -466,6 +485,8 @@
                       </article>
                     </li>
                   </ul>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev">  </div>
                 </div>
               </div>
               <div class="footer__container">         </div>
@@ -480,7 +501,7 @@
                   <li class="header__item">
                     <ul class="list contacts__list">
                       <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_phone"></div><span class="header__link_text">+996 550 237 676</span></a></li>
+                          <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
                       <li class="contacts__item"><a class="link contacts__link" href="#">
                           <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
                     </ul>
@@ -562,7 +583,6 @@
       </footer>
     </div>
     <script src="js/libs.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
