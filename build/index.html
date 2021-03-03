@@ -9,95 +9,118 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper swiper-container">
+    <div class="wrapper">
       <section class="signin__block popup">
-        <div class="container">
-          <form class="popup__form sign__form" id="form"><a class="link popup__close" href="#"></a>
+        <div class="container signin__container">
+          <div class="popup__form sign__popup_form"><a class="link popup__close" href="#"></a>
             <h4 class="login__title sign__form_title">Регистрация</h4>
-            <div class="sign__form_steps">
-              <div class="signin__form_step active">
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="text" name="login" placeholder="Минимально 3 символа" required><span class="popup__form_text"><span class="red__text">*</span>Логин</span>
-                </label>
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="email" name="email" placeholder="Введите вашу почту" required><span class="popup__form_text"><span class="red__text">*</span>Почта</span>
-                </label>
-                <label class="popup__form_label"> 
-                  <input class="popup__form_input" type="password" name="pass" placeholder="Минимум 6 символов" required><span class="popup__form_text"><span class="red__text">*</span>Пароль</span>
-                </label>
-                <label class="popup__form_label"> 
-                  <input class="popup__form_input" type="password" name="copy" placeholder="Повторите пароль" required><span class="popup__form_text"><span class="red__text">*</span>Повторите пароль</span>
-                </label>
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="text" name="name" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Фамилия</span>
-                </label>
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="text" name="surname" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Имя</span>
-                </label>
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="text" name="patronymic" placeholder="Используйте только кириллицу"><span class="popup__form_text">Отчество</span>
-                </label>
+            <form class="popup__form sign__form" id="sign__form_1">
+              <div class="sign__form__text"> 
+                <p>Вы гражданин КР?</p>
               </div>
-              <div class="signin__form_step">
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="text" name="address" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес по прописке</span>
-                </label>
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="email" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
-                </label>
-                <div class="sign__form__text"> 
-                  <p><span class="red__text">Внимание!</span>При вводе адреса по прописке, адрес автоматически копируется в поле адреса доставки. Если эти адреса отличаются, не забудьте указать адрес фактического проживания!</p>
-                </div>
-                <label class="popup__form_label">
-                  <input class="popup__form_input" type="email" name="delivery" placeholder="Введите ваш номер телефона"><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
-                </label>
-                <label class="popup__form_label popup__form_label_checkbox">
-                  <input class="popup__form_checkbox" type="checkbox">
-                  <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
-                </label>
-                <div class="sign__form__text"> 
-                  <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
-                </div>
+              <label class="popup__form_label">
+                <input class="popup__form_radio" type="radio" name="citizenship">
+                <div class="fake__popup__form_radio"></div><span class="popup__form_checkbox_text">да, я гражданин КР</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_radio" type="radio" name="citizenship">
+                <div class="fake__popup__form_radio"></div><span class="popup__form_checkbox_text">нет, я гражданин другой страны</span>
+              </label>
+              <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
+            </form>
+            <form class="popup__form sign__form" id="sign__form_true">
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="login" placeholder="12 Цифр с вашего паспорта" required><span class="popup__form_text"><span class="red__text">*<a class="link" href="#" title="Идентификационный номер налогоплательщика, или ИНН, — это 12-значный номер, который вы можете найти на своем паспорте.">ИНН</a></span></span>
+                <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
+              </label>
+            </form>
+            <form class="popup__form sign__form" id="sign__form_false">
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="surname" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Имя</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="name" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Фамилия</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="email" name="email" placeholder="Введите вашу почту" required><span class="popup__form_text"><span class="red__text">*</span>Почта</span>
+              </label>
+              <label class="popup__form_label"> 
+                <input class="popup__form_input" type="password" name="pass" placeholder="Минимум 6 символов" required><span class="popup__form_text"><span class="red__text">*</span>Пароль</span>
+              </label>
+              <label class="popup__form_label"> 
+                <input class="popup__form_input" type="password" name="copy" placeholder="Повторите пароль" required><span class="popup__form_text"><span class="red__text">*</span>Повторите пароль</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-," required><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="delivery" placeholder="Введите ваш номер телефона" required><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
+              </label>
+              <label class="popup__form_label popup__form_label_checkbox">
+                <input class="popup__form_checkbox" type="checkbox">
+                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
+              </label>
+              <div class="sign__form__text"> 
+                <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
               </div>
-              <div class="signin__form_step">
-                <div class="sign__form__text">
-                  <p>Cкан <span class="bold__text">ID-карты </span>лицевая сторона:</p>
-                  <div class="signin__file__block">
-                    <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
-                      <figcaption class="signin__photo_caption">Нет фото</figcaption>
-                    </figure>
+              <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
+            </form>
+            <form class="popup__form sign__form" id="sign__form_2">
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="address" placeholder="Используйте только кириллицу и знаки пробела с .-," required><span class="popup__form_text"><span class="red__text">*</span>Адрес по прописке</span>
+              </label>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-," required><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
+              </label>
+              <div class="sign__form__text"> 
+                <p><span class="red__text">Внимание!</span>При вводе адреса по прописке, адрес автоматически копируется в поле адреса доставки. Если эти адреса отличаются, не забудьте указать адрес фактического проживания!</p>
+              </div>
+              <label class="popup__form_label">
+                <input class="popup__form_input" type="text" name="delivery" placeholder="Введите ваш номер телефона" required><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
+              </label>
+              <label class="popup__form_label popup__form_label_checkbox">
+                <input class="popup__form_checkbox" type="checkbox">
+                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
+              </label>
+              <div class="sign__form__text"> 
+                <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
+              </div>
+              <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
+            </form>
+            <form class="popup__form sign__form" id="sign__form_3">
+              <div class="sign__form__text">
+                <p>Cкан <span class="bold__text">ID-карты </span>с обеих сторон:</p>
+                <div class="signin__file__block" id="drop__area">
+                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
+                  </figure>
+                  <div id="gallery"></div>
+                  <div class="sign__form_buttons_wrap">
                     <label class="signin__label">
-                      <input class="signin__input_file" type="file">
-                      <div class="signin__file__fake">Выбрать файл</div>
+                      <input class="signin__input_file" type="file" name="document" multiple accept="image/jpeg,image/png,image/jpg">
+                      <div class="signin__file__fake">Выбрать файлы</div>
+                    </label>
+                    <label class="signin__label">
+                      <button class="signin__input_file" id="reset" type="reset"></button>
+                      <div class="signin__file__fake">Удалить файлы</div>
                     </label>
                   </div>
                 </div>
-                <div class="sign__form__text">
-                  <p>Cкан <span class="bold__text">ID-карты </span>обратная сторона:   </p>
-                  <div class="signin__file__block">
-                    <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
-                      <figcaption class="signin__photo_caption">Нет фото</figcaption>
-                    </figure>
-                    <label class="signin__label">
-                      <input class="signin__input_file" type="file">
-                      <div class="signin__file__fake">Выбрать файл</div>
-                    </label>
-                  </div>
-                </div>
-                <label class="popup__form_label popup__form_label_checkbox">
-                  <input class="popup__form_checkbox" type="checkbox">
-                  <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span>
-                </label>
-                <div class="sign__form__text"> 
-                  <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
-                </div>
+                <progress id="progress-bar" max="100" value="0"></progress>
               </div>
-            </div>
+              <label class="popup__form_label popup__form_label_checkbox">
+                <input class="popup__form_checkbox" type="checkbox" name="checkbox">
+                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span>
+              </label>
+              <div class="sign__form__text"> 
+                <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
+              </div>
+              <button class="popup__button signin__popup_button" id="submit" type="submit">Зарегистрировать</button>
+            </form>
             <div class="progressbar signin__progressbar">
               <div class="progress__point signin__progress_point"></div><span class="progress__text">Шаг 1</span>
             </div>
-            <button class="popup__button signin__popup_button" type="submit">Подтвердить</button>
-          </form>
+          </div>
           <div class="popup__form sign__form success__popup"><a class="link popup__close" href="#"></a>
             <h4 class="login__title sign__form_title">Регистрация</h4>
             <div class="success__image"> <img src="images/svg/sprite.svg#success" alt="success icon"></div>
@@ -124,174 +147,70 @@
           </div>
         </div>
       </section>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <section class="first__section">
-            <div class="container">
-              <header class="header">
-                <ul class="list header__list">
-                  <li class="header__item">
-                    <ul class="list contacts__list">
-                      <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                      <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
-                  <li class="header__item header__item_login">
-                    <ul class="list auth__list">
-                      <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
-                          <div class="round__button round__button_signin"></div></a></li>
-                      <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
-                          <div class="round__button round__button_login"></div></a></li>
-                    </ul>
-                    <div class="popup login__popup"><a class="link popup__close" href="#"></a>
-                      <h4 class="login__title">Вход</h4>
-                      <form class="popup__form">
-                        <label class="popup__form_label">
-                          <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
-                        </label>
-                        <label class="popup__form_label"> 
-                          <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
-                        </label>
-                        <ul class="list login__form_links">
-                          <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
-                          <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
-                        </ul>
-                        <button class="popup__button" type="submit">Войти</button>
-                      </form>
-                    </div>
-                  </li>
-                </ul>
-              </header>
-              <header class="header__mobile"> 
-                <div class="header__logo"><img src="images/logo-mobile.svg" alt="logo"></div>
-                <ul class="list contacts__list"> 
-                  <li class="contacts__item"><a class="link contacts__link" href="#"><span class="header__link_text">+996 550 237 676</span>
-                      <div class="round__button round__button_phone"></div></a></li>
-                  <li class="contacts__item"><a class="link contacts__link" href="#"><span class="header__link_text">г.Бишкек, Киевская 155</span>
-                      <div class="round__button round__button_point"></div></a></li>
-                </ul>
-              </header>
-              <div class="main first__main">
-                <div class="map__container">
-                  <div class="map"></div>
-                </div>
-                <h2 class="first__page_title">Мы доставим ваши посылки из:</h2>
-                <h2 class="first__page_title">США, Российской Федерации, Китая, ЕС, Турции</h2>
-                <ul class="list first__bottom_list">
-                  <li class="first__bottom_item first__bottom_item_left">
-                    <div class="first__bottom_arrow"><img src="images/arrow_right.svg" alt="arrow"></div>
-                    <div class="first__bottom_left_text">
-                      <p>Прокрутите, чтобы изучить</p>
-                    </div>
-                  </li>
-                  <li class="first__bottom_item first__bottom_item_right">
-                    <div class="popup calculator__popup"><a class="link popup__close" href="#"></a>
-                      <h4 class="login__title calculator__title">Калькулятор</h4>
-                      <div class="popup__info">
-                        <h5 class="yellow__text calculator__subtitle">Важно!</h5>
-                        <article class="calculator__text">
-                          <p>При отправке легких, но крупногабаритных (объемных) грузов стоимость доставки рассчитывается по "объемному весу" в соответствии с формулой: </p>
-                          <p>Длина (см) х ширина (см) х высота (см) / 6000 = объемный вес (кг).</p>
-                        </article>
-                        <div class="calculator__schema"> <img src="images/calculator.svg" alt="schema"><img src="images/schema.svg" alt="formulas"></div><a class="link popup__button popup__button_continue" href="#">Продолжить</a>
-                      </div>
-                      <div class="popup__calc"> 
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section class="first__section">
+              <div class="container">
+                <header class="header">
+                  <ul class="list header__list">
+                    <li class="header__item">
+                      <ul class="list contacts__list">
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item header__item_login">
+                      <ul class="list auth__list">
+                        <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
+                            <div class="round__button round__button_signin"></div></a></li>
+                        <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
+                            <div class="round__button round__button_login"></div></a></li>
+                      </ul>
+                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Вход</h4>
                         <form class="popup__form">
                           <label class="popup__form_label">
-                            <select class="popup__form_input">
-                              <option value="usa" name="usa">USA</option>
-                              <option value="turkey" name="turkey">Turkey</option>
-                              <option value="russia" name="russia">Russia</option>
-                              <option value="es" name="es">EuroUnion</option>
-                              <option value="china" name="china">China</option>
-                            </select><span class="popup__form_text">Страна</span>
+                            <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
                           </label>
-                          <label class="popup__form_label">
-                            <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
+                          <label class="popup__form_label"> 
+                            <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
                           </label>
-                          <label class="popup__form_label">
-                            <input class="popup__form_input" type="text"><span class="popup__form_text">Высота</span>
-                          </label>
-                          <label class="popup__form_label">
-                            <input class="popup__form_input" type="text"><span class="popup__form_text">Ширина</span>
-                          </label>
-                          <label class="popup__form_label">
-                            <input class="popup__form_input" type="text"><span class="popup__form_text">Длинна</span>
-                          </label>
-                          <article class="popup__form_desc"> 
-                            <p>Коробка размером 111 x 111 x 111 (см.) и весом 10кг. будет доставляться по объемному весу, который составляет 227.94 кг.</p>
-                          </article>
-                          <button class="popup__button" type="submit">Рассчитать</button>
+                          <ul class="list login__form_links">
+                            <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
+                            <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
+                          </ul>
+                          <button class="popup__button" type="submit">Войти</button>
                         </form>
                       </div>
-                    </div><a class="link first__bottom_link" href="#">
-                      <div class="round__button round__button_calc"></div>
-                      <div class="first__bottom_right_text">
-                        <p>Калькулятор </p>
-                      </div></a>
-                  </li>
-                </ul>
-              </div>
-              <main class="first__main_mobile">
-                <h2 class="first__title_mobile">Мы доставим ваши посылки из:</h2>
-                <div class="first__main_tabs"> 
-                  <ul class="list first__tabs_content">
-                    <li class="fist__content_items active"><img src="images/country/usa.svg" alt="usa"></li>
-                    <li class="fist__content_items"> <img src="images/country/russia.svg" alt="russia"></li>
-                    <li class="fist__content_items"> <img src="images/country/china.svg" alt="china"></li>
-                    <li class="fist__content_items"> <img src="images/country/usa.svg" alt="eu"></li>
-                    <li class="fist__content_items"> <img src="images/country/turkey.svg" alt="turkey"></li>
+                    </li>
                   </ul>
-                  <ul class="list first__tabs_list">
-                    <li class="first__tabs__item"><a class="link first__tabs__link active" href="#">США</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Российская Федерации</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Китай</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">ЕС</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Турция</a></li>
+                </header>
+                <header class="header__mobile"> 
+                  <div class="header__logo"><img src="images/logo-mobile.svg" alt="logo"></div>
+                  <ul class="list contacts__list"> 
+                    <li class="contacts__item"><a class="link contacts__link" href="#"><span class="header__link_text">+996 550 237 676</span>
+                        <div class="round__button round__button_phone"></div></a></li>
+                    <li class="contacts__item"><a class="link contacts__link" href="#"><span class="header__link_text">г.Бишкек, Киевская 155</span>
+                        <div class="round__button round__button_point"></div></a></li>
                   </ul>
-                </div>
-              </main>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide"> 
-          <section class="second__section">
-            <div class="container">
-              <header class="header">
-                <ul class="list header__list">
-                  <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
-                  <li class="header__item">
-                    <ul class="list auth__list">
-                      <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text light">Регистрация</span>
-                          <div class="round__button round__button_signin"></div></a></li>
-                      <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text light">Вход</span>
-                          <div class="round__button round__button_login"></div></a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </header>
-              <div class="main second__main">
-                <div class="second__section_wrap">
-                  <h2 class="page__title second__title">О нас</h2>
-                  <article class="second__article">
-                    <p>Наша компания является одним из самых надежных и доступных поставщиков логистических и складских услуг в Кыргызстане. Мы предоставляем нашим клиентам самый полный спектр транспортных услуг. Наш многолетний опыт в логистике позволяет непрерывно работать над индивидуальными предложениями для каждого из наших клиентов.</p>
-                    <p>На основе отзывов клиентов о нашей работе, мы работаем над совершенствованием нашей системы – это разработка более коротких маршрутов, проработка тарифов для различного рода грузов и обучение наших специалистов для повышения качества обслуживания. Наша задача - помогать развитию вашего бизнеса через своевременные и надежные поставки товаров!</p>
-                  </article>
-                  <h4 class="second__subtitle">Что мы предлагаем:</h4>
-                  <ul class="list second__list">
-                    <li class="second__item">Бесплатную и быструю регистрацию на нашем сайте</li>
-                    <li class="second__item">Бесплатные почтовые адреса в США, Европе, Турции</li>
-                    <li class="second__item">Еженедельные Авиа отправки</li>
-                    <li class="second__item">Возможность отслеживать Ваши посылки</li>
-                    <li class="second__item">Курьерскую доставку по Кыргызстану</li>
-                    <li class="second__item">Страховку Ваших посылок</li>
-                    <li class="second__item">Карго перевозки</li>
-                  </ul>
+                </header>
+                <div class="main first__main">
+                  <div class="map__container">
+                    <div class="map"></div>
+                  </div>
+                  <h2 class="first__page_title">Мы доставим ваши посылки из:</h2>
+                  <h2 class="first__page_title">США, Российской Федерации, Китая, ЕС, Турции</h2>
                   <ul class="list first__bottom_list">
-                    <li></li>
+                    <li class="first__bottom_item first__bottom_item_left">
+                      <div class="first__bottom_arrow"><img src="images/arrow_right.svg" alt="arrow"></div>
+                      <div class="first__bottom_left_text">
+                        <p>Прокрутите, чтобы изучить</p>
+                      </div>
+                    </li>
                     <li class="first__bottom_item first__bottom_item_right">
                       <div class="popup calculator__popup"><a class="link popup__close" href="#"></a>
                         <h4 class="login__title calculator__title">Калькулятор</h4>
@@ -333,244 +252,347 @@
                           </form>
                         </div>
                       </div><a class="link first__bottom_link" href="#">
-                        <div class="round__button round__button_calc"></div>
-                        <div class="first__bottom_right_text">
-                          <p>Калькулятор</p>
-                        </div></a>
+                        <div class="round__button round__button_calc"></div><span class="first__bottom_right_text">Калькулятор </span></a>
                     </li>
                   </ul>
                 </div>
+                <main class="first__main_mobile">
+                  <h2 class="first__title_mobile">Мы доставим ваши посылки из:</h2>
+                  <div class="first__main_tabs"> 
+                    <ul class="list first__tabs_content">
+                      <li class="fist__content_items active"><img src="images/country/usa.svg" alt="usa"></li>
+                      <li class="fist__content_items"> <img src="images/country/russia.svg" alt="russia"></li>
+                      <li class="fist__content_items"> <img src="images/country/china.svg" alt="china"></li>
+                      <li class="fist__content_items"> <img src="images/country/usa.svg" alt="eu"></li>
+                      <li class="fist__content_items"> <img src="images/country/turkey.svg" alt="turkey"></li>
+                    </ul>
+                    <ul class="list first__tabs_list">
+                      <li class="first__tabs__item"><a class="link first__tabs__link active" href="#">США</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Российская Федерации</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Китай</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="#">ЕС</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Турция</a></li>
+                    </ul>
+                  </div>
+                </main>
               </div>
-              <div class="footer__container">           </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide">
-          <section class="third__section">
-            <div class="container">
-              <header class="header">
-                <ul class="list header__list">
-                  <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
-                  <li class="header__item">
-                    <ul class="list auth__list">
-                      <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text light">Регистрация</span>
-                          <div class="round__button round__button_signin"></div></a></li>
-                      <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text light">Вход</span>
-                          <div class="round__button round__button_login"></div></a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </header>
-              <div class="main third__main">
-                <h3 class="page__title third__title">Как это работает?</h3>
-                <h5 class="third__subtitle">Покупайте в любых интернет-магазинах США | Shipito доставит товары прямо к вам домой!</h5>
-                <div class="third__subtitle_mobile_wrap">
-                  <h5 class="third__subtitle third__subtitle_mobile">Покупайте в любых интернет-магазинах США</h5>
-                  <h5 class="third__subtitle third__subtitle_mobile">Shipito доставит товары прямо к вам домой!</h5>
-                </div>
-                <ul class="list third__list">
-                  <li class="third__item">
-                    <h4 class="third__item_title">1. Вы отправляете свои покупки на наш склад в США, Европу или Турцию</h4>
-                    <div class="third__item_image"><img src="images/svg/sprite.svg#mail" alt="mail"></div>
-                    <article class="third__item_text">
-                      <p>Станьте клиентом сервиса – зарегистрируйтесь на Shipito и получите личный почтовый адрес в США, Европе и Турции. Затем Вы можете использовать полученный адрес в качестве адреса доставки в любых интернет-магазинах этих стран.</p>
-                    </article><a class="third__item_link" href="#">Подробнее</a>
-                  </li>
-                  <li class="third__item">
-                    <h4 class="third__item_title">2. Регистрируйте свои покупки на нашем сайте</h4>
-                    <div class="third__item_image"><img src="images/svg/sprite.svg#share" alt="share"></div>
-                    <article class="third__item_text">
-                      <p>После оплаты товара через некоторое время Вы должны получить трэк-номер, который Вы можете найти в Вашем почтовом ящике либо в личном кабинете на сайте, где совершали покупку. После этого необходимо зарегистрировать этот трэк в личном кабинете на нашем сайте. Это необходимо для подготовки таможенных документов и контроля над состоянием Вашей посылки.</p>
-                    </article><a class="third__item_link" href="#">Подробнее</a>
-                  </li>
-                  <li class="third__item">
-                    <h4 class="third__item_title">3. Мы упаковываем и отправляем ваши покупки</h4>
-                    <div class="third__item_image"><img src="images/svg/sprite.svg#pallet" alt="pallet"></div>
-                    <article class="third__item_text">
-                      <p>После получения Вашей посылки на складе мы аккуратно переупакуем ее, посчитаем стоимость доставки и предоставим вам трэкинг-номер. Объединение покупок в одну исходящую посылку позволит вам существенно экономить.</p>
-                    </article><a class="third__item_link" href="#">Подробнее</a>
-                  </li>
-                  <li class="third__item">
-                    <h4 class="third__item_title"> 4. Вы получаете свою посылку в Кыргызстане</h4>
-                    <div class="third__item_image"><img src="images/svg/sprite.svg#box" alt="box"></div>
-                    <article class="third__item_text">
-                      <p>Через 5-7 дней после отправки Вы получите посылку в Бишкеке, затем вы можете оценить работу сервиса и оставить отзыв. Мы ценим ваше мнение – оно помогает нам делать сервис еще лучше!</p>
-                    </article><a class="third__item_link" href="#">Подробнее</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="footer__container">       </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide">
-          <section class="fourth__section">
-            <div class="container">
-              <header class="header">
-                <ul class="list header__list">
-                  <li class="header__item">
-                    <ul class="list contacts__list">
-                      <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                      <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
-                  <li class="header__item header__item_login">
-                    <ul class="list auth__list">
-                      <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
-                          <div class="round__button round__button_signin"></div></a></li>
-                      <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
-                          <div class="round__button round__button_login"></div></a></li>
-                    </ul>
-                    <div class="popup login__popup"><a class="link popup__close" href="#"></a>
-                      <h4 class="login__title">Вход</h4>
-                      <form class="popup__form">
-                        <label class="popup__form_label">
-                          <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
-                        </label>
-                        <label class="popup__form_label"> 
-                          <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
-                        </label>
-                        <ul class="list login__form_links">
-                          <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
-                          <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
-                        </ul>
-                        <button class="popup__button" type="submit">Войти</button>
-                      </form>
-                    </div>
-                  </li>
-                </ul>
-              </header>
-              <div class="main fouth__main">
-                <h2 class="page__title fourth__title">Отслеживание</h2>
-                <form class="fourth__form">
-                  <input class="fourth__form_input" type="search" placeholder="Введите ваш номер трека тут!!!">
-                  <button class="fouth__form_button" type="submit">Отследить</button>
-                </form><span class="form__desc">Введите как минимум 8 последних знаков Вашего номера и нажмите <span class="yellow__text">"ОТСЛЕДИТЬ"</span></span>
-                <h2 class="page__title fourth__title fouth__title_news">Новости</h2>
-                <div class="swiper-news">
-                  <ul class="list news__list swiper-wrapper">
-                    <li class="news__item active swiper-slide">
-                      <h5 class="news__title">Изменение дня отправки из США</h5>
-                      <div class="news__info"> <span class="news__date">07.01.2021</span><span class="news__author">Опубликовал - CEO</span></div>
-                      <div class="news__image"> <img src="images/news/image1.png" alt="news image"></div>
-                      <article class="news__text"> 
-                        <p>С этой недели отправка из США будет осуществляться по вторникам, а не по четвергам. В отправку будут попадать посылки, поступившие на склад с понедельника по пятницу предыдущей недели.</p>
-                      </article>
-                    </li>
-                    <li class="news__item swiper-slide">
-                      <h5 class="news__title">График работы курьеров и офиса</h5>
-                      <div class="news__info"> <span class="news__date">29.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
-                      <div class="news__image"> <img src="images/news/image2.png" alt="news image"></div>
-                      <article class="news__text"> 
-                        <p>С 30 декабря по 4 января курьеры не будут осуществлять доставку. Это связанно с дорожной обстановкой в предпраздничные дни и с самим праздником. Офис будет работать в штатном режиме, кроме 31 декабря. В этот день офис открыт с 10 до 15 часов, 1 по 4 января – выходные.</p>
-                      </article>
-                    </li>
-                    <li class="news__item swiper-slide">
-                      <h5 class="news__title">График работы складов</h5>
-                      <div class="news__info"> <span class="news__date">13.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
-                      <div class="news__image"> <img src="images/news/image3.png" alt="news image"></div>
-                      <article class="news__text"> 
-                        <p>Склад в США не будет работать 24 и 25 декабря, а также с 31 декабря по 4 января, в Турции и России с 31 декабря по 6 января. В эти периоды НИКТО принимать посылки НЕ СМОЖЕТ! Склад в Китае работает в прежнем режиме.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptatem sunt vel reiciendis voluptas cupiditate repellendus modi veniam dignissimos suscipit officia, quas vitae exercitationem assumenda doloribus et, iste, maxime odit?</p>
-                      </article>
-                    </li>
-                    <li class="news__item swiper-slide">
-                      <h5 class="news__title">Важная информация</h5>
-                      <div class="news__info"> <span class="news__date">01.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
-                      <div class="news__image"> <img src="images/news/image4.png" alt="news image"></div>
-                      <article class="news__text"> 
-                        <p>Уважаемые клиенты будьте внимательны при заполнении адресов складов! Указывайте все в точности так, как вы видите у себя в кабинете. Не соглашайтесь на изменение адреса сайтом, где Вы его используете. Если у Вас возникают ....</p>
-                      </article>
+            </section>
+          </div>
+          <div class="swiper-slide"> 
+            <section class="second__section">
+              <div class="container">
+                <header class="header">
+                  <ul class="list header__list">
+                    <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
+                    <li class="header__item">
+                      <ul class="list auth__list">
+                        <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text light">Регистрация</span>
+                            <div class="round__button round__button_signin"></div></a></li>
+                        <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text light">Вход</span>
+                            <div class="round__button round__button_login"></div></a></li>
+                      </ul>
                     </li>
                   </ul>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev">  </div>
+                </header>
+                <div class="main second__main">
+                  <div class="second__section_wrap">
+                    <h2 class="page__title second__title">О нас</h2>
+                    <article class="second__article">
+                      <p>Наша компания является одним из самых надежных и доступных поставщиков логистических и складских услуг в Кыргызстане. Мы предоставляем нашим клиентам самый полный спектр транспортных услуг. Наш многолетний опыт в логистике позволяет непрерывно работать над индивидуальными предложениями для каждого из наших клиентов.</p>
+                      <p>На основе отзывов клиентов о нашей работе, мы работаем над совершенствованием нашей системы – это разработка более коротких маршрутов, проработка тарифов для различного рода грузов и обучение наших специалистов для повышения качества обслуживания. Наша задача - помогать развитию вашего бизнеса через своевременные и надежные поставки товаров!</p>
+                    </article>
+                    <h4 class="second__subtitle">Что мы предлагаем:</h4>
+                    <ul class="list second__list">
+                      <li class="second__item">Бесплатную и быструю регистрацию на нашем сайте</li>
+                      <li class="second__item">Бесплатные почтовые адреса в США, Европе, Турции</li>
+                      <li class="second__item">Еженедельные Авиа отправки</li>
+                      <li class="second__item">Возможность отслеживать Ваши посылки</li>
+                      <li class="second__item">Курьерскую доставку по Кыргызстану</li>
+                      <li class="second__item">Страховку Ваших посылок</li>
+                      <li class="second__item">Карго перевозки</li>
+                    </ul>
+                    <ul class="list first__bottom_list">
+                      <li></li>
+                      <li class="first__bottom_item first__bottom_item_right">
+                        <div class="popup calculator__popup"><a class="link popup__close" href="#"></a>
+                          <h4 class="login__title calculator__title">Калькулятор</h4>
+                          <div class="popup__info">
+                            <h5 class="yellow__text calculator__subtitle">Важно!</h5>
+                            <article class="calculator__text">
+                              <p>При отправке легких, но крупногабаритных (объемных) грузов стоимость доставки рассчитывается по "объемному весу" в соответствии с формулой: </p>
+                              <p>Длина (см) х ширина (см) х высота (см) / 6000 = объемный вес (кг).</p>
+                            </article>
+                            <div class="calculator__schema"> <img src="images/calculator.svg" alt="schema"><img src="images/schema.svg" alt="formulas"></div><a class="link popup__button popup__button_continue" href="#">Продолжить</a>
+                          </div>
+                          <div class="popup__calc"> 
+                            <form class="popup__form">
+                              <label class="popup__form_label">
+                                <select class="popup__form_input">
+                                  <option value="usa" name="usa">USA</option>
+                                  <option value="turkey" name="turkey">Turkey</option>
+                                  <option value="russia" name="russia">Russia</option>
+                                  <option value="es" name="es">EuroUnion</option>
+                                  <option value="china" name="china">China</option>
+                                </select><span class="popup__form_text">Страна</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Высота</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Ширина</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Длинна</span>
+                              </label>
+                              <article class="popup__form_desc"> 
+                                <p>Коробка размером 111 x 111 x 111 (см.) и весом 10кг. будет доставляться по объемному весу, который составляет 227.94 кг.</p>
+                              </article>
+                              <button class="popup__button" type="submit">Рассчитать</button>
+                            </form>
+                          </div>
+                        </div><a class="link first__bottom_link" href="#">
+                          <div class="round__button round__button_calc"></div>
+                          <div class="first__bottom_right_text">
+                            <p>Калькулятор</p>
+                          </div></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="footer__container">           </div>
               </div>
-              <div class="footer__container">         </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide"> 
-          <section class="fiveth__section">
-            <div class="container">
-              <header class="header">
-                <ul class="list header__list">
-                  <li class="header__item">
-                    <ul class="list contacts__list">
-                      <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                      <li class="contacts__item"><a class="link contacts__link" href="#">
-                          <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="third__section">
+              <div class="container">
+                <header class="header">
+                  <ul class="list header__list">
+                    <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
+                    <li class="header__item">
+                      <ul class="list auth__list">
+                        <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text light">Регистрация</span>
+                            <div class="round__button round__button_signin"></div></a></li>
+                        <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text light">Вход</span>
+                            <div class="round__button round__button_login"></div></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </header>
+                <div class="main third__main">
+                  <h3 class="page__title third__title">Как это работает?</h3>
+                  <h5 class="third__subtitle">Покупайте в любых интернет-магазинах США | Shipito доставит товары прямо к вам домой!</h5>
+                  <div class="third__subtitle_mobile_wrap">
+                    <h5 class="third__subtitle third__subtitle_mobile">Покупайте в любых интернет-магазинах США</h5>
+                    <h5 class="third__subtitle third__subtitle_mobile">Shipito доставит товары прямо к вам домой!</h5>
+                  </div>
+                  <ul class="list third__list">
+                    <li class="third__item">
+                      <h4 class="third__item_title">1. Вы отправляете свои покупки на наш склад в США, Европу или Турцию</h4>
+                      <div class="third__item_image"><img src="images/svg/sprite.svg#mail" alt="mail"></div>
+                      <article class="third__item_text">
+                        <p>Станьте клиентом сервиса – зарегистрируйтесь на Shipito и получите личный почтовый адрес в США, Европе и Турции. Затем Вы можете использовать полученный адрес в качестве адреса доставки в любых интернет-магазинах этих стран.</p>
+                      </article><a class="third__item_link" href="#">Подробнее</a>
+                    </li>
+                    <li class="third__item">
+                      <h4 class="third__item_title">2. Регистрируйте свои покупки на нашем сайте</h4>
+                      <div class="third__item_image"><img src="images/svg/sprite.svg#share" alt="share"></div>
+                      <article class="third__item_text">
+                        <p>После оплаты товара через некоторое время Вы должны получить трэк-номер, который Вы можете найти в Вашем почтовом ящике либо в личном кабинете на сайте, где совершали покупку. После этого необходимо зарегистрировать этот трэк в личном кабинете на нашем сайте. Это необходимо для подготовки таможенных документов и контроля над состоянием Вашей посылки.</p>
+                      </article><a class="third__item_link" href="#">Подробнее</a>
+                    </li>
+                    <li class="third__item">
+                      <h4 class="third__item_title">3. Мы упаковываем и отправляем ваши покупки</h4>
+                      <div class="third__item_image"><img src="images/svg/sprite.svg#pallet" alt="pallet"></div>
+                      <article class="third__item_text">
+                        <p>После получения Вашей посылки на складе мы аккуратно переупакуем ее, посчитаем стоимость доставки и предоставим вам трэкинг-номер. Объединение покупок в одну исходящую посылку позволит вам существенно экономить.</p>
+                      </article><a class="third__item_link" href="#">Подробнее</a>
+                    </li>
+                    <li class="third__item">
+                      <h4 class="third__item_title"> 4. Вы получаете свою посылку в Кыргызстане</h4>
+                      <div class="third__item_image"><img src="images/svg/sprite.svg#box" alt="box"></div>
+                      <article class="third__item_text">
+                        <p>Через 5-7 дней после отправки Вы получите посылку в Бишкеке, затем вы можете оценить работу сервиса и оставить отзыв. Мы ценим ваше мнение – оно помогает нам делать сервис еще лучше!</p>
+                      </article><a class="third__item_link" href="#">Подробнее</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__container">       </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="fourth__section">
+              <div class="container">
+                <header class="header">
+                  <ul class="list header__list">
+                    <li class="header__item">
+                      <ul class="list contacts__list">
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item header__item_login">
+                      <ul class="list auth__list">
+                        <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
+                            <div class="round__button round__button_signin"></div></a></li>
+                        <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
+                            <div class="round__button round__button_login"></div></a></li>
+                      </ul>
+                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Вход</h4>
+                        <form class="popup__form">
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
+                          </label>
+                          <label class="popup__form_label"> 
+                            <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
+                          </label>
+                          <ul class="list login__form_links">
+                            <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
+                            <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
+                          </ul>
+                          <button class="popup__button" type="submit">Войти</button>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </header>
+                <div class="main fouth__main">
+                  <h2 class="page__title fourth__title">Отслеживание</h2>
+                  <form class="fourth__form">
+                    <input class="fourth__form_input" type="search" placeholder="Введите ваш номер трека тут!!!">
+                    <button class="fouth__form_button" type="submit">Отследить</button>
+                  </form><span class="form__desc">Введите как минимум 8 последних знаков Вашего номера и нажмите <span class="yellow__text">"ОТСЛЕДИТЬ"</span></span>
+                  <h2 class="page__title fourth__title fouth__title_news">Новости</h2>
+                  <div class="swiper-news">
+                    <ul class="list news__list swiper-wrapper">
+                      <li class="news__item active swiper-slide">
+                        <h5 class="news__title">Изменение дня отправки из США</h5>
+                        <div class="news__info"> <span class="news__date">07.01.2021</span><span class="news__author">Опубликовал - CEO</span></div>
+                        <div class="news__image"> <img src="images/news/image1.png" alt="news image"></div>
+                        <article class="news__text"> 
+                          <p>С этой недели отправка из США будет осуществляться по вторникам, а не по четвергам. В отправку будут попадать посылки, поступившие на склад с понедельника по пятницу предыдущей недели.</p>
+                        </article>
+                      </li>
+                      <li class="news__item swiper-slide">
+                        <h5 class="news__title">График работы курьеров и офиса</h5>
+                        <div class="news__info"> <span class="news__date">29.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
+                        <div class="news__image"> <img src="images/news/image2.png" alt="news image"></div>
+                        <article class="news__text"> 
+                          <p>С 30 декабря по 4 января курьеры не будут осуществлять доставку. Это связанно с дорожной обстановкой в предпраздничные дни и с самим праздником. Офис будет работать в штатном режиме, кроме 31 декабря. В этот день офис открыт с 10 до 15 часов, 1 по 4 января – выходные.</p>
+                        </article>
+                      </li>
+                      <li class="news__item swiper-slide">
+                        <h5 class="news__title">График работы складов</h5>
+                        <div class="news__info"> <span class="news__date">13.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
+                        <div class="news__image"> <img src="images/news/image3.png" alt="news image"></div>
+                        <article class="news__text"> 
+                          <p>Склад в США не будет работать 24 и 25 декабря, а также с 31 декабря по 4 января, в Турции и России с 31 декабря по 6 января. В эти периоды НИКТО принимать посылки НЕ СМОЖЕТ! Склад в Китае работает в прежнем режиме.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptatem sunt vel reiciendis voluptas cupiditate repellendus modi veniam dignissimos suscipit officia, quas vitae exercitationem assumenda doloribus et, iste, maxime odit?</p>
+                        </article>
+                      </li>
+                      <li class="news__item swiper-slide">
+                        <h5 class="news__title">Важная информация</h5>
+                        <div class="news__info"> <span class="news__date">01.12.2020</span><span class="news__author">Опубликовал - CEO</span></div>
+                        <div class="news__image"> <img src="images/news/image4.png" alt="news image"></div>
+                        <article class="news__text"> 
+                          <p>Уважаемые клиенты будьте внимательны при заполнении адресов складов! Указывайте все в точности так, как вы видите у себя в кабинете. Не соглашайтесь на изменение адреса сайтом, где Вы его используете. Если у Вас возникают ....</p>
+                        </article>
+                      </li>
                     </ul>
-                  </li>
-                  <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
-                  <li class="header__item header__item_login">
-                    <ul class="list auth__list">
-                      <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
-                          <div class="round__button round__button_signin"></div></a></li>
-                      <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
-                          <div class="round__button round__button_login"></div></a></li>
-                    </ul>
-                    <div class="popup login__popup"><a class="link popup__close" href="#"></a>
-                      <h4 class="login__title">Вход</h4>
-                      <form class="popup__form">
-                        <label class="popup__form_label">
-                          <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev">  </div>
+                  </div>
+                </div>
+                <div class="footer__container">         </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide"> 
+            <section class="fiveth__section">
+              <div class="container">
+                <header class="header">
+                  <ul class="list header__list">
+                    <li class="header__item">
+                      <ul class="list contacts__list">
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item header__item_login">
+                      <ul class="list auth__list">
+                        <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
+                            <div class="round__button round__button_signin"></div></a></li>
+                        <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
+                            <div class="round__button round__button_login"></div></a></li>
+                      </ul>
+                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Вход</h4>
+                        <form class="popup__form">
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
+                          </label>
+                          <label class="popup__form_label"> 
+                            <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
+                          </label>
+                          <ul class="list login__form_links">
+                            <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
+                            <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
+                          </ul>
+                          <button class="popup__button" type="submit">Войти</button>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </header>
+                <div class="main fiveth__main">
+                  <ul class="list fiveth__top_list">
+                    <li class="fiveth__top_item">
+                      <h2 class="fiveth__title">Часто задаваемые вопросы</h2><span class="fiveth__title_desc">Это короткий список довольно часто возникающих вопросов</span>
+                    </li>
+                    <li class="fiveth__top_item">
+                      <form class="fiveth__form">
+                        <label class="fiveth__form_input_wrap">
+                          <input class="fiveth__form_input" type="search" placeholder="Введите ключевое слово">
                         </label>
-                        <label class="popup__form_label"> 
-                          <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
-                        </label>
-                        <ul class="list login__form_links">
-                          <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
-                          <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
-                        </ul>
-                        <button class="popup__button" type="submit">Войти</button>
+                        <button class="fiveth__form_button" type="search"></button><span class="fiveth__form_text">Поиск по существующим вопросам</span>
                       </form>
-                    </div>
-                  </li>
-                </ul>
-              </header>
-              <div class="main fiveth__main">
-                <ul class="list fiveth__top_list">
-                  <li class="fiveth__top_item">
-                    <h2 class="fiveth__title">Часто задаваемые вопросы</h2><span class="fiveth__title_desc">Это короткий список довольно часто возникающих вопросов</span>
-                  </li>
-                  <li class="fiveth__top_item">
-                    <form class="fiveth__form">
-                      <label class="fiveth__form_input_wrap">
-                        <input class="fiveth__form_input" type="search" placeholder="Введите ключевое слово">
-                      </label>
-                      <button class="fiveth__form_button" type="search"></button><span class="fiveth__form_text">Поиск по существующим вопросам</span>
-                    </form>
-                  </li>
-                </ul>
-                <ul class="list fiveth__acco__list"> 
-                  <li class="fiveth__acco_item">
-                    <h4 class="fiveth__acco_title">Когда осуществляется отправки?</h4>
-                    <div class="fiveth__acco_content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat consequatur nostrum dolores ullam enim sequi fugit placeat iste exercitationem. Tenetur est, quasi adipisci fugit alias ab nihil vitae illo totam repellendus nisi obcaecati iusto excepturi tempora a corrupti quae accusamus voluptatem esse similique dolorem quis asperiores dolore. Laboriosam, repellendus. Doloremque ipsum mollitia amet! Sunt mollitia adipisci temporibus veniam explicabo. Sunt, laborum. Consequuntur architecto optio fugiat ea, iure voluptas culpa officia natus autem nesciunt voluptatum facere, tenetur unde nostrum accusantium repellendus, perferendis laudantium corrupti molestiae laboriosam quaerat officiis similique. Omnis dolorem porro optio officiis exercitationem iste harum eveniet debitis voluptates.</p>
-                    </div>
-                  </li>
-                  <li class="fiveth__acco_item">
-                    <h4 class="fiveth__acco_title">Зачем Вам нужна копия моего паспорта?</h4>
-                    <div class="fiveth__acco_content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat consequatur nostrum dolores ullam enim sequi fugit placeat iste exercitationem. Tenetur est, quasi adipisci fugit alias ab nihil vitae illo totam repellendus nisi obcaecati iusto excepturi tempora a corrupti quae accusamus voluptatem esse similique dolorem quis asperiores dolore. Laboriosam, repellendus. Doloremque ipsum mollitia amet! Sunt mollitia adipisci temporibus veniam explicabo. Sunt, laborum. Consequuntur architecto optio fugiat ea, iure voluptas culpa officia natus autem nesciunt voluptatum facere, tenetur unde nostrum accusantium repellendus, perferendis laudantium corrupti molestiae laboriosam quaerat officiis similique. Omnis dolorem porro optio officiis exercitationem iste harum eveniet debitis voluptates.</p>
-                    </div>
-                  </li>
-                  <li class="fiveth__acco_item">
-                    <h4 class="fiveth__acco_title">Что вы не можете преревозить?</h4>
-                    <div class="fiveth__acco_content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat consequatur nostrum dolores ullam enim sequi fugit placeat iste exercitationem. Tenetur est, quasi adipisci fugit alias ab nihil vitae illo totam repellendus nisi obcaecati iusto excepturi tempora a corrupti quae accusamus voluptatem esse similique dolorem quis asperiores dolore. Laboriosam, repellendus. Doloremque ipsum mollitia amet! Sunt mollitia adipisci temporibus veniam explicabo. Sunt, laborum. Consequuntur architecto optio fugiat ea, iure voluptas culpa officia natus autem nesciunt voluptatum facere, tenetur unde nostrum accusantium repellendus, perferendis laudantium corrupti molestiae laboriosam quaerat officiis similique. Omnis dolorem porro optio officiis exercitationem iste harum eveniet debitis voluptates.</p>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                  <ul class="list fiveth__acco__list"> 
+                    <li class="fiveth__acco_item">
+                      <h4 class="fiveth__acco_title">Когда осуществляется отправки?</h4>
+                      <div class="fiveth__acco_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat consequatur nostrum dolores ullam enim sequi fugit placeat iste exercitationem. Tenetur est, quasi adipisci fugit alias ab nihil vitae illo totam repellendus nisi obcaecati iusto excepturi tempora a corrupti quae accusamus voluptatem esse similique dolorem quis asperiores dolore. Laboriosam, repellendus. Doloremque ipsum mollitia amet! Sunt mollitia adipisci temporibus veniam explicabo. Sunt, laborum. Consequuntur architecto optio fugiat ea, iure voluptas culpa officia natus autem nesciunt voluptatum facere, tenetur unde nostrum accusantium repellendus, perferendis laudantium corrupti molestiae laboriosam quaerat officiis similique. Omnis dolorem porro optio officiis exercitationem iste harum eveniet debitis voluptates.</p>
+                      </div>
+                    </li>
+                    <li class="fiveth__acco_item">
+                      <h4 class="fiveth__acco_title">Зачем Вам нужна копия моего паспорта?</h4>
+                      <div class="fiveth__acco_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat consequatur nostrum dolores ullam enim sequi fugit placeat iste exercitationem. Tenetur est, quasi adipisci fugit alias ab nihil vitae illo totam repellendus nisi obcaecati iusto excepturi tempora a corrupti quae accusamus voluptatem esse similique dolorem quis asperiores dolore. Laboriosam, repellendus. Doloremque ipsum mollitia amet! Sunt mollitia adipisci temporibus veniam explicabo. Sunt, laborum. Consequuntur architecto optio fugiat ea, iure voluptas culpa officia natus autem nesciunt voluptatum facere, tenetur unde nostrum accusantium repellendus, perferendis laudantium corrupti molestiae laboriosam quaerat officiis similique. Omnis dolorem porro optio officiis exercitationem iste harum eveniet debitis voluptates.</p>
+                      </div>
+                    </li>
+                    <li class="fiveth__acco_item">
+                      <h4 class="fiveth__acco_title">Что вы не можете преревозить?</h4>
+                      <div class="fiveth__acco_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat consequatur nostrum dolores ullam enim sequi fugit placeat iste exercitationem. Tenetur est, quasi adipisci fugit alias ab nihil vitae illo totam repellendus nisi obcaecati iusto excepturi tempora a corrupti quae accusamus voluptatem esse similique dolorem quis asperiores dolore. Laboriosam, repellendus. Doloremque ipsum mollitia amet! Sunt mollitia adipisci temporibus veniam explicabo. Sunt, laborum. Consequuntur architecto optio fugiat ea, iure voluptas culpa officia natus autem nesciunt voluptatum facere, tenetur unde nostrum accusantium repellendus, perferendis laudantium corrupti molestiae laboriosam quaerat officiis similique. Omnis dolorem porro optio officiis exercitationem iste harum eveniet debitis voluptates.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__container">       </div>
               </div>
-              <div class="footer__container">       </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
       <footer class="footer">
