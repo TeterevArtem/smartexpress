@@ -19,101 +19,123 @@
                 <p>Вы гражданин КР?</p>
               </div>
               <label class="popup__form_label">
-                <input class="popup__form_radio" type="radio" name="citizenship">
+                <input class="popup__form_radio" id="radioButtonTrue" type="radio" name="citizenship" checked>
                 <div class="fake__popup__form_radio"></div><span class="popup__form_checkbox_text">да, я гражданин КР</span>
               </label>
               <label class="popup__form_label">
-                <input class="popup__form_radio" type="radio" name="citizenship">
+                <input class="popup__form_radio" id="radioButtonFalse" type="radio" name="citizenship">
                 <div class="fake__popup__form_radio"></div><span class="popup__form_checkbox_text">нет, я гражданин другой страны</span>
               </label>
               <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
             </form>
             <form class="popup__form sign__form" id="sign__form_true">
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="login" placeholder="12 Цифр с вашего паспорта" required><span class="popup__form_text"><span class="red__text">*<a class="link" href="#" title="Идентификационный номер налогоплательщика, или ИНН, — это 12-значный номер, который вы можете найти на своем паспорте.">ИНН</a></span></span>
+              <div class="form__group">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="personal-number" placeholder="14 Цифр с вашего паспорта"><span class="popup__form_text"><span class="red__text">*<a class="link" href="#" title="Идентификационный номер налогоплательщика, или ИНН, — это 12-значный номер, который вы можете найти на своем паспорте.">ИНН</a></span></span><span class="messages"></span>
+                </label>
+              </div>
+              <div class="form__group">       
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="ID" placeholder="ID паспорта"><span class="popup__form_text"><span class="red__text">*<a class="link" href="#" title="ID паспорта или персональный номер">ID </a></span></span><span class="messages"></span>
+                </label>
                 <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
-              </label>
+              </div>
             </form>
             <form class="popup__form sign__form" id="sign__form_false">
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="surname" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Имя</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="name" placeholder="Используйте только кириллицу" required><span class="popup__form_text"><span class="red__text">*</span>Фамилия</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="email" name="email" placeholder="Введите вашу почту" required><span class="popup__form_text"><span class="red__text">*</span>Почта</span>
-              </label>
-              <label class="popup__form_label"> 
-                <input class="popup__form_input" type="password" name="pass" placeholder="Минимум 6 символов" required><span class="popup__form_text"><span class="red__text">*</span>Пароль</span>
-              </label>
-              <label class="popup__form_label"> 
-                <input class="popup__form_input" type="password" name="copy" placeholder="Повторите пароль" required><span class="popup__form_text"><span class="red__text">*</span>Повторите пароль</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-," required><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="delivery" placeholder="Введите ваш номер телефона" required><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
-              </label>
-              <label class="popup__form_label popup__form_label_checkbox">
-                <input class="popup__form_checkbox" type="checkbox">
-                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
-              </label>
-              <div class="sign__form__text"> 
-                <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
+              <div class="form__group">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="name" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Имя</span><span class="messages"></span>
+                </label>
+              </div>
+              <div class="form__group">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="surname" placeholder="Используйте только кириллицу"><span class="popup__form_text"><span class="red__text">*</span>Фамилия</span><span class="messages"></span>
+                </label>
+              </div>
+              <div class="form__group">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="email" name="email" placeholder="Введите вашу почту"><span class="popup__form_text"><span class="red__text">*</span>Почта</span><span class="messages"></span>
+                </label>
+              </div>
+              <div class="form__group">
+                <label class="popup__form_label"> 
+                  <input class="popup__form_input" type="password" name="password" placeholder="Минимум 6 символов"><span class="popup__form_text"><span class="red__text">*</span>Пароль</span><span class="messages"></span>
+                </label>
+              </div>
+              <div class="form__group">
+                <label class="popup__form_label"> 
+                  <input class="popup__form_input" type="password" name="confirm-password" placeholder="Повторите пароль"><span class="popup__form_text"><span class="red__text">*</span>Повторите пароль</span><span class="messages"></span>
+                </label>
               </div>
               <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
             </form>
             <form class="popup__form sign__form" id="sign__form_2">
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="address" placeholder="Используйте только кириллицу и знаки пробела с .-," required><span class="popup__form_text"><span class="red__text">*</span>Адрес по прописке</span>
-              </label>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-," required><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span>
-              </label>
-              <div class="sign__form__text"> 
-                <p><span class="red__text">Внимание!</span>При вводе адреса по прописке, адрес автоматически копируется в поле адреса доставки. Если эти адреса отличаются, не забудьте указать адрес фактического проживания!</p>
+              <div class="form__group">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="delivery" placeholder="Используйте только кириллицу и знаки пробела с .-,"><span class="popup__form_text"><span class="red__text">*</span>Адрес для доставки</span><span class="messages"></span>
+                </label>
               </div>
-              <label class="popup__form_label">
-                <input class="popup__form_input" type="text" name="delivery" placeholder="Введите ваш номер телефона" required><span class="popup__form_text"><span class="red__text">*</span>Телефон</span>
-              </label>
-              <label class="popup__form_label popup__form_label_checkbox">
-                <input class="popup__form_checkbox" type="checkbox">
-                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text"> - На этом номере есть WhatsApp</span>
-              </label>
-              <div class="sign__form__text"> 
-                <p>Если Вы используете WhatsApp на номере который регистрируете, Вы можете активировать уведомления через WhatsApp</p>
+              <div class="form__group">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="phone" placeholder="Введите ваш номер телефона"><span class="popup__form_text"><span class="red__text">*</span>Телефон</span><span class="messages"></span>
+                </label>
+              </div>
+              <div class="form__group">
+                <label class="popup__form_label">
+                  <input class="popup__form_input" type="text" name="whatsapp" placeholder="Введите ваш номер What's App"><span class="popup__form_text">What's App</span><span class="messages">       </span>
+                </label>
               </div>
               <button class="popup__button signin__popup_button" type="submit">Продолжить</button>
             </form>
             <form class="popup__form sign__form" id="sign__form_3">
               <div class="sign__form__text">
-                <p>Cкан <span class="bold__text">ID-карты </span>с обеих сторон:</p>
-                <div class="signin__file__block" id="drop__area">
+                <p>Cкан <span class="bold__text">ID-карты </span>с лицевой стороны</p>
+              </div>
+              <div class="drop__area_block" id="drop__area_front">
+                <div class="signin__file__block">
+                  <div class="gallery"></div>
                   <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
                     <figcaption class="signin__photo_caption">Нет фото</figcaption>
                   </figure>
-                  <div id="gallery"></div>
-                  <div class="sign__form_buttons_wrap">
+                  <div class="form__group">
                     <label class="signin__label">
-                      <input class="signin__input_file" type="file" name="document" multiple accept="image/jpeg,image/png,image/jpg">
-                      <div class="signin__file__fake">Выбрать файлы</div>
-                    </label>
-                    <label class="signin__label">
-                      <button class="signin__input_file" id="reset" type="reset"></button>
-                      <div class="signin__file__fake">Удалить файлы</div>
-                    </label>
+                      <input class="signin__input_file" type="file" name="doc-front" accept="image/jpeg,image/png">
+                      <div class="signin__file__fake">Выбрать файл</div>
+                    </label><span class="messages"> </span>
                   </div>
                 </div>
-                <progress id="progress-bar" max="100" value="0"></progress>
+                <progress class="progress-bar" max="100" value="0"></progress>
               </div>
-              <label class="popup__form_label popup__form_label_checkbox">
-                <input class="popup__form_checkbox" type="checkbox" name="checkbox">
-                <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span>
+              <div class="sign__form__text">
+                <p>Cкан <span class="bold__text">ID-карты </span>с лицевой стороны</p>
+              </div>
+              <div class="drop__area_block" id="drop__area_back">
+                <div class="signin__file__block">
+                  <div class="gallery"></div>
+                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
+                  </figure>
+                  <div class="form__group">
+                    <label class="signin__label">
+                      <input class="signin__input_file" type="file" name="doc-back" accept="image/jpeg,image/png">
+                      <div class="signin__file__fake">Выбрать файл</div>
+                    </label><span class="messages"> </span>
+                  </div>
+                </div>
+                <progress class="progress-bar" max="100" value="0"></progress>
+              </div>
+              <label class="signin__label">
+                <button class="signin__input_file" id="reset" type="reset"></button>
+                <div class="signin__file__fake signin__fale__fake_reset">Удалить файлы</div>
               </label>
-              <div class="sign__form__text"> 
-                <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
+              <div class="form__group">
+                <label class="popup__form_label popup__form_label_checkbox">
+                  <input class="popup__form_checkbox" type="checkbox" name="checkbox">
+                  <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span><span class="messages"></span>
+                </label>
+                <div class="sign__form__text"> 
+                  <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
+                </div>
               </div>
               <button class="popup__button signin__popup_button" id="submit" type="submit">Зарегистрировать</button>
             </form>
@@ -198,63 +220,65 @@
                         <div class="round__button round__button_point"></div></a></li>
                   </ul>
                 </header>
-                <div class="main first__main">
-                  <div class="map__container">
-                    <div class="map"></div>
-                  </div>
-                  <h2 class="first__page_title">Мы доставим ваши посылки из:</h2>
-                  <h2 class="first__page_title">США, Российской Федерации, Китая, ЕС, Турции</h2>
-                  <ul class="list first__bottom_list">
-                    <li class="first__bottom_item first__bottom_item_left">
-                      <div class="first__bottom_arrow"><img src="images/arrow_right.svg" alt="arrow"></div>
-                      <div class="first__bottom_left_text">
-                        <p>Прокрутите, чтобы изучить</p>
-                      </div>
-                    </li>
-                    <li class="first__bottom_item first__bottom_item_right">
-                      <div class="popup calculator__popup"><a class="link popup__close" href="#"></a>
-                        <h4 class="login__title calculator__title">Калькулятор</h4>
-                        <div class="popup__info">
-                          <h5 class="yellow__text calculator__subtitle">Важно!</h5>
-                          <article class="calculator__text">
-                            <p>При отправке легких, но крупногабаритных (объемных) грузов стоимость доставки рассчитывается по "объемному весу" в соответствии с формулой: </p>
-                            <p>Длина (см) х ширина (см) х высота (см) / 6000 = объемный вес (кг).</p>
-                          </article>
-                          <div class="calculator__schema"> <img src="images/calculator.svg" alt="schema"><img src="images/schema.svg" alt="formulas"></div><a class="link popup__button popup__button_continue" href="#">Продолжить</a>
+                <div class="main">
+                  <div class="first__main">
+                    <div class="map__container">
+                      <div class="map"></div>
+                    </div>
+                    <h2 class="first__page_title">Мы доставим ваши посылки из:</h2>
+                    <h2 class="first__page_title">США, Российской Федерации, Китая, ЕС, Турции</h2>
+                    <ul class="list first__bottom_list">
+                      <li class="first__bottom_item first__bottom_item_left">
+                        <div class="first__bottom_arrow"><img src="images/arrow_right.svg" alt="arrow"></div>
+                        <div class="first__bottom_left_text">
+                          <p>Прокрутите, чтобы изучить</p>
                         </div>
-                        <div class="popup__calc"> 
-                          <form class="popup__form">
-                            <label class="popup__form_label">
-                              <select class="popup__form_input">
-                                <option value="usa" name="usa">USA</option>
-                                <option value="turkey" name="turkey">Turkey</option>
-                                <option value="russia" name="russia">Russia</option>
-                                <option value="es" name="es">EuroUnion</option>
-                                <option value="china" name="china">China</option>
-                              </select><span class="popup__form_text">Страна</span>
-                            </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
-                            </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text"><span class="popup__form_text">Высота</span>
-                            </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text"><span class="popup__form_text">Ширина</span>
-                            </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text"><span class="popup__form_text">Длинна</span>
-                            </label>
-                            <article class="popup__form_desc"> 
-                              <p>Коробка размером 111 x 111 x 111 (см.) и весом 10кг. будет доставляться по объемному весу, который составляет 227.94 кг.</p>
+                      </li>
+                      <li class="first__bottom_item first__bottom_item_right">
+                        <div class="popup calculator__popup"><a class="link popup__close" href="#"></a>
+                          <h4 class="login__title calculator__title">Калькулятор</h4>
+                          <div class="popup__info">
+                            <h5 class="yellow__text calculator__subtitle">Важно!</h5>
+                            <article class="calculator__text">
+                              <p>При отправке легких, но крупногабаритных (объемных) грузов стоимость доставки рассчитывается по "объемному весу" в соответствии с формулой: </p>
+                              <p>Длина (см) х ширина (см) х высота (см) / 6000 = объемный вес (кг).</p>
                             </article>
-                            <button class="popup__button" type="submit">Рассчитать</button>
-                          </form>
-                        </div>
-                      </div><a class="link first__bottom_link" href="#">
-                        <div class="round__button round__button_calc"></div><span class="first__bottom_right_text">Калькулятор </span></a>
-                    </li>
-                  </ul>
+                            <div class="calculator__schema"> <img src="images/calculator.svg" alt="schema"><img src="images/schema.svg" alt="formulas"></div><a class="link popup__button popup__button_continue" href="#">Продолжить</a>
+                          </div>
+                          <div class="popup__calc"> 
+                            <form class="popup__form">
+                              <label class="popup__form_label">
+                                <select class="popup__form_input">
+                                  <option value="usa" name="usa">USA</option>
+                                  <option value="turkey" name="turkey">Turkey</option>
+                                  <option value="russia" name="russia">Russia</option>
+                                  <option value="es" name="es">EuroUnion</option>
+                                  <option value="china" name="china">China</option>
+                                </select><span class="popup__form_text">Страна</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Вес</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Высота</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Ширина</span>
+                              </label>
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text"><span class="popup__form_text">Длинна</span>
+                              </label>
+                              <article class="popup__form_desc"> 
+                                <p>Коробка размером 111 x 111 x 111 (см.) и весом 10кг. будет доставляться по объемному весу, который составляет 227.94 кг.</p>
+                              </article>
+                              <button class="popup__button" type="submit">Рассчитать</button>
+                            </form>
+                          </div>
+                        </div><a class="link first__bottom_link" href="#">
+                          <div class="round__button round__button_calc"></div><span class="first__bottom_right_text">Калькулятор </span></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <main class="first__main_mobile">
                   <h2 class="first__title_mobile">Мы доставим ваши посылки из:</h2>
@@ -596,7 +620,7 @@
         </div>
       </div>
       <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
           <div class="progressbar swiper-scrollbar">
             <div class="progress__point handle"></div>
           </div>
@@ -605,6 +629,7 @@
       </footer>
     </div>
     <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
