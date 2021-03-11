@@ -221,8 +221,8 @@
                       <div class="round__button round__button_point"></div></a></li>
                 </ul>
               </header>
-              <div class="main">
-                <div class="container first__main">
+              <main class="main first__main">
+                <div class="container first__container">
                   <div class="map__container">
                     <div class="map"></div>
                   </div>
@@ -278,32 +278,14 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <main class="first__main_mobile">
-                <h2 class="first__title_mobile">Мы доставим ваши посылки из:</h2>
-                <div class="first__main_tabs"> 
-                  <ul class="list first__tabs_content">
-                    <li class="fist__content_items active"><img src="images/country/usa.svg" alt="usa"></li>
-                    <li class="fist__content_items"> <img src="images/country/russia.svg" alt="russia"></li>
-                    <li class="fist__content_items"> <img src="images/country/china.svg" alt="china"></li>
-                    <li class="fist__content_items"> <img src="images/country/usa.svg" alt="eu"></li>
-                    <li class="fist__content_items"> <img src="images/country/turkey.svg" alt="turkey"></li>
-                  </ul>
-                  <ul class="list first__tabs_list">
-                    <li class="first__tabs__item"><a class="link first__tabs__link active" href="#">США</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Российская Федерации</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Китай</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">ЕС</a></li>
-                    <li class="first__tabs__item"><a class="link first__tabs__link" href="#">Турция</a></li>
-                  </ul>
-                </div>
               </main>
+              <div class="footer__container"></div>
             </section>
           </div>
           <div class="swiper-slide"> 
             <section class="second__section">
-              <div class="container">
-                <header class="header">
+              <header class="header">
+                <div class="container">
                   <ul class="list header__list">
                     <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
                     <li class="header__item">
@@ -315,9 +297,23 @@
                       </ul>
                     </li>
                   </ul>
-                </header>
-                <div class="main second__main">
-                  <div class="second__section_wrap">
+                </div>
+              </header>
+              <main class="main second__main">
+                <div class="container second__container">
+                  <div class="second__section_wrap second__section_wrap_left">
+                    <div class="second__accordion">
+                      <ul class="list accordion__list"> 
+                        <li class="accordion__item"> 1</li>
+                        <li class="accordion__item"> 1</li>
+                        <li class="accordion__item"> 1</li>
+                        <li class="accordion__item"> 1</li>
+                        <li class="accordion__item"> 1</li>
+                        <li class="accordion__item"> 1</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="second__section_wrap second__section_wrap_right">
                     <h2 class="page__title second__title">О нас</h2>
                     <article class="second__article">
                       <p>Наша компания является одним из самых надежных и доступных поставщиков логистических и складских услуг в Кыргызстане. Мы предоставляем нашим клиентам самый полный спектр транспортных услуг. Наш многолетний опыт в логистике позволяет непрерывно работать над индивидуальными предложениями для каждого из наших клиентов.</p>
@@ -382,14 +378,14 @@
                     </ul>
                   </div>
                 </div>
-                <div class="footer__container">           </div>
-              </div>
+              </main>
+              <div class="footer__container">           </div>
             </section>
           </div>
           <div class="swiper-slide">
             <section class="third__section">
-              <div class="container">
-                <header class="header">
+              <header class="header">
+                <div class="container">
                   <ul class="list header__list">
                     <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
                     <li class="header__item">
@@ -401,8 +397,10 @@
                       </ul>
                     </li>
                   </ul>
-                </header>
-                <div class="main third__main">
+                </div>
+              </header>
+              <div class="main third__main">
+                <div class="container">
                   <h3 class="page__title third__title">Как это работает?</h3>
                   <h5 class="third__subtitle">Покупайте в любых интернет-магазинах США | Shipito доставит товары прямо к вам домой!</h5>
                   <div class="third__subtitle_mobile_wrap">
@@ -440,58 +438,65 @@
                     </li>
                   </ul>
                 </div>
-                <div class="footer__container">       </div>
               </div>
+              <div class="footer__container">       </div>
             </section>
           </div>
           <div class="swiper-slide">
             <section class="fourth__section">
-              <div class="container">
-                <header class="header">
-                  <div class="container">
-                    <ul class="list header__list">
-                      <li class="header__item">
-                        <ul class="list contacts__list">
-                          <li class="contacts__item"><a class="link contacts__link" href="#">
-                              <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                          <li class="contacts__item"><a class="link contacts__link" href="#">
-                              <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
-                        </ul>
-                      </li>
-                      <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
-                      <li class="header__item header__item_login">
-                        <ul class="list auth__list">
-                          <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
-                              <div class="round__button round__button_signin"></div></a></li>
-                          <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
-                              <div class="round__button round__button_login"></div></a></li>
-                        </ul>
-                        <div class="popup login__popup"><a class="link popup__close" href="#"></a>
-                          <h4 class="login__title">Вход</h4>
-                          <form class="popup__form">
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
-                            </label>
-                            <label class="popup__form_label"> 
-                              <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
-                            </label>
-                            <ul class="list login__form_links">
-                              <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
-                              <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
-                            </ul>
-                            <button class="popup__button" type="submit">Войти</button>
-                          </form>
-                        </div>
-                      </li>
-                    </ul>
+              <header class="header">
+                <div class="container">
+                  <ul class="list header__list">
+                    <li class="header__item">
+                      <ul class="list contacts__list">
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item header__item_login">
+                      <ul class="list auth__list">
+                        <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
+                            <div class="round__button round__button_signin"></div></a></li>
+                        <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
+                            <div class="round__button round__button_login"></div></a></li>
+                      </ul>
+                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Вход</h4>
+                        <form class="popup__form">
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
+                          </label>
+                          <label class="popup__form_label"> 
+                            <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
+                          </label>
+                          <ul class="list login__form_links">
+                            <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
+                            <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
+                          </ul>
+                          <button class="popup__button" type="submit">Войти</button>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </header>
+              <div class="main fourth__main">
+                <div class="container fourth__container">
+                  <div class="fourth__block_wrap">
+                    <div class="fourth__main__block">
+                      <h2 class="page__title fourth__title">Отслеживание</h2>
+                      <form class="fourth__form">
+                        <input class="fourth__form_input" type="search" placeholder="Введите ваш номер трека тут!!!">
+                        <button class="fouth__form_button" type="submit">Отследить</button>
+                      </form><span class="form__desc">Введите как минимум 8 последних знаков Вашего номера и нажмите <span class="yellow__text">"ОТСЛЕДИТЬ"</span></span>
+                    </div>
+                    <div class="fourth__main__block">
+                      <div class="fourth__form_result"></div>
+                    </div>
                   </div>
-                </header>
-                <div class="main fouth__main">
-                  <h2 class="page__title fourth__title">Отслеживание</h2>
-                  <form class="fourth__form">
-                    <input class="fourth__form_input" type="search" placeholder="Введите ваш номер трека тут!!!">
-                    <button class="fouth__form_button" type="submit">Отследить</button>
-                  </form><span class="form__desc">Введите как минимум 8 последних знаков Вашего номера и нажмите <span class="yellow__text">"ОТСЛЕДИТЬ"</span></span>
                   <h2 class="page__title fourth__title fouth__title_news">Новости</h2>
                   <div class="swiper-news">
                     <ul class="list news__list swiper-wrapper">
@@ -528,57 +533,55 @@
                         </article>
                       </li>
                     </ul>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev">  </div>
                   </div>
                 </div>
-                <div class="footer__container">         </div>
               </div>
+              <div class="footer__container">         </div>
             </section>
           </div>
           <div class="swiper-slide"> 
             <section class="fiveth__section">
-              <div class="container">
-                <header class="header">
-                  <div class="container">
-                    <ul class="list header__list">
-                      <li class="header__item">
-                        <ul class="list contacts__list">
-                          <li class="contacts__item"><a class="link contacts__link" href="#">
-                              <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                          <li class="contacts__item"><a class="link contacts__link" href="#">
-                              <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
-                        </ul>
-                      </li>
-                      <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
-                      <li class="header__item header__item_login">
-                        <ul class="list auth__list">
-                          <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
-                              <div class="round__button round__button_signin"></div></a></li>
-                          <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
-                              <div class="round__button round__button_login"></div></a></li>
-                        </ul>
-                        <div class="popup login__popup"><a class="link popup__close" href="#"></a>
-                          <h4 class="login__title">Вход</h4>
-                          <form class="popup__form">
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
-                            </label>
-                            <label class="popup__form_label"> 
-                              <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
-                            </label>
-                            <ul class="list login__form_links">
-                              <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
-                              <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
-                            </ul>
-                            <button class="popup__button" type="submit">Войти</button>
-                          </form>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </header>
-                <div class="main fiveth__main">
+              <header class="header">
+                <div class="container">
+                  <ul class="list header__list">
+                    <li class="header__item">
+                      <ul class="list contacts__list">
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
+                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                            <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item header__item_login">
+                      <ul class="list auth__list">
+                        <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
+                            <div class="round__button round__button_signin"></div></a></li>
+                        <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
+                            <div class="round__button round__button_login"></div></a></li>
+                      </ul>
+                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Вход</h4>
+                        <form class="popup__form">
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
+                          </label>
+                          <label class="popup__form_label"> 
+                            <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
+                          </label>
+                          <ul class="list login__form_links">
+                            <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
+                            <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
+                          </ul>
+                          <button class="popup__button" type="submit">Войти</button>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </header>
+              <main class="main fiveth__main">
+                <div class="container">
                   <ul class="list fiveth__top_list">
                     <li class="fiveth__top_item">
                       <h2 class="fiveth__title">Часто задаваемые вопросы</h2><span class="fiveth__title_desc">Это короткий список довольно часто возникающих вопросов</span>
@@ -613,20 +616,20 @@
                     </li>
                   </ul>
                 </div>
-                <div class="footer__container">       </div>
-              </div>
+              </main>
+              <div class="footer__container">       </div>
             </section>
           </div>
         </div>
-      </div>
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="progressbar swiper-scrollbar">
-            <div class="progress__point handle"></div>
+        <footer class="footer">
+          <div class="container footer__container">
+            <div class="progressbar swiper-scrollbar">
+              <div class="progress__point handle"></div>
+            </div>
+            <div class="nav__list pages"></div>
           </div>
-          <div class="nav__list pages"></div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
     <script src="js/libs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
