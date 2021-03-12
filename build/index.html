@@ -176,13 +176,23 @@
               <header class="header">
                 <div class="container">
                   <ul class="list header__list">
-                    <li class="header__item">
+                    <li class="header__item header__item_contacts">
                       <ul class="list contacts__list">
-                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                        <li class="contacts__item"><a class="link contacts__link contacts__link_contacts" href="#">
                             <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                        <li class="contacts__item"><a class="link contacts__link contacts__link_map" href="#">
                             <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
                       </ul>
+                      <div class="popup popup__block popup__block_contacts"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Контакты</h4>
+                        <ul class="list popup__contact_list">
+                          <li class="popup__contact_item"> <span>Менеджер по США, Турции, Европе</span><a href="tel:+996550237676">+996550237676</a></li>
+                          <li class="popup__contact_item"> <span>Менеджер по Китаю</span><a href="tel:+996551152200">+996551152200</a></li>
+                          <li class="popup__contact_item"> <span>Менеджер по России</span><a href="tel:+996554237626">+996554237626</a></li>
+                          <li class="popup__contact_item"><span>Чат-бот What'sApp</span><a href="https://wa.me/996556237676" target="_blank">+996556237676</a></li>
+                          <li class="popup__contact_item"><span>Почтовый адрес</span><a href="mailto:info@smartex.kg">info@smartex.kg</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
                     <li class="header__item header__item_login">
@@ -192,7 +202,7 @@
                         <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
                             <div class="round__button round__button_login"></div></a></li>
                       </ul>
-                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                      <div class="popup popup__block popup__block_login"><a class="link popup__close" href="#"></a>
                         <h4 class="login__title">Вход</h4>
                         <form class="popup__form">
                           <label class="popup__form_label">
@@ -302,14 +312,137 @@
               <main class="main second__main">
                 <div class="container second__container">
                   <div class="second__section_wrap second__section_wrap_left">
+                    <h4 class="second__wrap_title">Где что покупать?</h4>
                     <div class="second__accordion">
-                      <ul class="list accordion__list"> 
-                        <li class="accordion__item"> 1</li>
-                        <li class="accordion__item"> 1</li>
-                        <li class="accordion__item"> 1</li>
-                        <li class="accordion__item"> 1</li>
-                        <li class="accordion__item"> 1</li>
-                        <li class="accordion__item"> 1</li>
+                      <ul class="list accordion__list">
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_shop">Универсальные площадки</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_car">Авто запчасти</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_party">Вечеринки и праздники</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_baby">Детские товары</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_watering">Дом и сад</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_bird">Зоотовары</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_cream">Косметика</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_medicine">Красота и здоровье</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_stroller">Молодым мамам</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_music">Музыкальные иструменты</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_panties">Музыкальные иструменты</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_shirt">Одежда, обувь, аксессуары</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_gift">Подарки и сувениры</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_ball">Спорт и активный отдых</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_watch">Часы</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion__item"> 
+                          <h5 class="accordion__title accordion__title_electronics">Электроника</h5>
+                          <div class="accordion__content">
+                            <ul class="list accordion__content_list">
+                              <li class="accorgion__content_item"> <a class="link accordion__content_link" href="#"></a></li>
+                            </ul>
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -447,13 +580,23 @@
               <header class="header">
                 <div class="container">
                   <ul class="list header__list">
-                    <li class="header__item">
+                    <li class="header__item header__item_contacts">
                       <ul class="list contacts__list">
-                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                        <li class="contacts__item"><a class="link contacts__link contacts__link_contacts" href="#">
                             <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                        <li class="contacts__item"><a class="link contacts__link contacts__link_map" href="#">
                             <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
                       </ul>
+                      <div class="popup popup__block popup__block_contacts"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Контакты</h4>
+                        <ul class="list popup__contact_list">
+                          <li class="popup__contact_item"> <span>Менеджер по США, Турции, Европе</span><a href="tel:+996550237676">+996550237676</a></li>
+                          <li class="popup__contact_item"> <span>Менеджер по Китаю</span><a href="tel:+996551152200">+996551152200</a></li>
+                          <li class="popup__contact_item"> <span>Менеджер по России</span><a href="tel:+996554237626">+996554237626</a></li>
+                          <li class="popup__contact_item"><span>Чат-бот What'sApp</span><a href="https://wa.me/996556237676" target="_blank">+996556237676</a></li>
+                          <li class="popup__contact_item"><span>Почтовый адрес</span><a href="mailto:info@smartex.kg">info@smartex.kg</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
                     <li class="header__item header__item_login">
@@ -463,7 +606,7 @@
                         <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
                             <div class="round__button round__button_login"></div></a></li>
                       </ul>
-                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                      <div class="popup popup__block popup__block_login"><a class="link popup__close" href="#"></a>
                         <h4 class="login__title">Вход</h4>
                         <form class="popup__form">
                           <label class="popup__form_label">
@@ -544,13 +687,23 @@
               <header class="header">
                 <div class="container">
                   <ul class="list header__list">
-                    <li class="header__item">
+                    <li class="header__item header__item_contacts">
                       <ul class="list contacts__list">
-                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                        <li class="contacts__item"><a class="link contacts__link contacts__link_contacts" href="#">
                             <div class="round__button round__button_phone"></div><span class="header__link_text">Контакты</span></a></li>
-                        <li class="contacts__item"><a class="link contacts__link" href="#">
+                        <li class="contacts__item"><a class="link contacts__link contacts__link_map" href="#">
                             <div class="round__button round__button_point"></div><span class="header__link_text">г.Бишкек, Киевская 155</span></a></li>
                       </ul>
+                      <div class="popup popup__block popup__block_contacts"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Контакты</h4>
+                        <ul class="list popup__contact_list">
+                          <li class="popup__contact_item"> <span>Менеджер по США, Турции, Европе</span><a href="tel:+996550237676">+996550237676</a></li>
+                          <li class="popup__contact_item"> <span>Менеджер по Китаю</span><a href="tel:+996551152200">+996551152200</a></li>
+                          <li class="popup__contact_item"> <span>Менеджер по России</span><a href="tel:+996554237626">+996554237626</a></li>
+                          <li class="popup__contact_item"><span>Чат-бот What'sApp</span><a href="https://wa.me/996556237676" target="_blank">+996556237676</a></li>
+                          <li class="popup__contact_item"><span>Почтовый адрес</span><a href="mailto:info@smartex.kg">info@smartex.kg</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
                     <li class="header__item header__item_login">
@@ -560,7 +713,7 @@
                         <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text">Вход</span>
                             <div class="round__button round__button_login"></div></a></li>
                       </ul>
-                      <div class="popup login__popup"><a class="link popup__close" href="#"></a>
+                      <div class="popup popup__block popup__block_login"><a class="link popup__close" href="#"></a>
                         <h4 class="login__title">Вход</h4>
                         <form class="popup__form">
                           <label class="popup__form_label">
