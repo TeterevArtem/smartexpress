@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="js/slick/slick.css">
-    <link rel="stylesheet" href="js/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -248,6 +246,12 @@
               </header>
               <main class="main first__main">
                 <div class="container first__container">
+                  <form class="lang__form">
+                    <select class="lang__form_select">
+                      <option name="ru" value="RU">Рус</option>
+                      <option name="en" value="EN">Eng</option>
+                    </select>
+                  </form>
                   <div class="map__container">
                     <div class="map">
                       <div class="plane"></div>
@@ -315,13 +319,29 @@
                 <div class="container">
                   <ul class="list header__list">
                     <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
-                    <li class="header__item">
+                    <li class="header__item header__item_login">
                       <ul class="list auth__list">
                         <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text light">Регистрация</span>
                             <div class="round__button round__button_signin"></div></a></li>
                         <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text light">Вход</span>
                             <div class="round__button round__button_login"></div></a></li>
                       </ul>
+                      <div class="popup popup__block popup__block_login"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Вход</h4>
+                        <form class="popup__form">
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
+                          </label>
+                          <label class="popup__form_label"> 
+                            <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
+                          </label>
+                          <ul class="list login__form_links">
+                            <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
+                            <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
+                          </ul>
+                          <button class="popup__button" type="submit">Войти</button>
+                        </form>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -537,7 +557,7 @@
                           </div>
                         </div><a class="link first__bottom_link" href="#">
                           <div class="round__button round__button_calc"></div>
-                          <div class="first__bottom_right_text">
+                          <div class="first__bottom_right_text light">
                             <p>Калькулятор</p>
                           </div></a>
                       </li>
@@ -554,13 +574,29 @@
                 <div class="container">
                   <ul class="list header__list">
                     <li class="header__item"><img src="images/logo3.svg" alt="logo3"></li>
-                    <li class="header__item">
+                    <li class="header__item header__item_login">
                       <ul class="list auth__list">
                         <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text light">Регистрация</span>
                             <div class="round__button round__button_signin"></div></a></li>
                         <li class="auth__item"><a class="link auth__link auth__link_login" href="#"> <span class="header__link_text light">Вход</span>
                             <div class="round__button round__button_login"></div></a></li>
                       </ul>
+                      <div class="popup popup__block popup__block_login"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title">Вход</h4>
+                        <form class="popup__form">
+                          <label class="popup__form_label">
+                            <input class="popup__form_input" type="text" name="login" placeholder="Введите ваш логин"><span class="popup__form_text">Логин</span>
+                          </label>
+                          <label class="popup__form_label"> 
+                            <input class="popup__form_input" type="password" name="pass" placeholder="Введите ваш пароль"><span class="popup__form_text">Пароль</span>
+                          </label>
+                          <ul class="list login__form_links">
+                            <li class="login__form_item"><a class="login__form_link" href="#">Регистрация  </a></li>
+                            <li class="login__form_item"><a class="login__form_link" href="#">Забыли пароль?</a></li>
+                          </ul>
+                          <button class="popup__button" type="submit">Войти</button>
+                        </form>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -836,6 +872,7 @@
                     </li>
                   </ul>
                   <div class="news__panel">
+                    <div class="news__info"></div>
                     <div class="news__control">
                       <div class="news__control_arrow2 news__control_arrow_left2"></div>
                       <div class="news__slides_info"></div>
@@ -950,8 +987,6 @@
       </div>
     </div>
     <script src="js/libs.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
