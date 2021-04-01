@@ -23,7 +23,7 @@
               <li class="main__sidebar_tabs__item"><a class="link main__sidebar_link main__sidebar_link_mail" href="mail">Сообщения</a></li>
               <li class="main__sidebar_tabs__item"><a class="link main__sidebar_link main__sidebar_link_news" href="news">Новости</a></li>
               <li class="main__sidebar_tabs__item"><a class="link main__sidebar_link main__sidebar_link_addresses" href="orders">Мои заказы</a></li>
-              <li class="main__sidebar_tabs__item"><a class="link main__sidebar_link main__sidebar_link_ballance" href="ballance">Мои балланс</a></li>
+              <li class="main__sidebar_tabs__item"><a class="link main__sidebar_link main__sidebar_link_balance" href="balance">Мои балланс</a></li>
             </ul>
           </div>
           <div class="main__sidebar_nav"><span class="main__sidebar_title">Settings</span>
@@ -45,7 +45,7 @@
                     <div class="office__main__item_head">
                       <h3 class="item__head_title">США</h3>
                       <div class="item__head_info">
-                        <div class="item__head_info__cost">11.0<span>$/кг </span></div>
+                        <div class="item__head_info__cost">11.0<span>/кг </span></div>
                       </div>
                     </div>
                     <div class="office__main__item_body">
@@ -66,7 +66,7 @@
                     <div class="office__main__item_head">
                       <h3 class="item__head_title">Европейский Союз</h3>
                       <div class="item__head_info">
-                        <div class="item__head_info__cost">11.0<span>$/кг </span></div>
+                        <div class="item__head_info__cost">11.0<span>/кг </span></div>
                       </div>
                     </div>
                     <div class="office__main__item_body">
@@ -87,7 +87,7 @@
                     <div class="office__main__item_head">
                       <h3 class="item__head_title">Россия</h3>
                       <div class="item__head_info">
-                        <div class="item__head_info__cost">4.0<span>$/кг </span></div>
+                        <div class="item__head_info__cost">4.0<span>/кг </span></div>
                       </div>
                     </div>
                     <div class="office__main__item_body">
@@ -386,7 +386,7 @@
             </div>
             <div class="orders__content orders__content_reg">
               <h4 class="order__title">Регистрация товара</h4>
-              <form class="orders__buy_form">
+              <form class="orders__buy_form orders__buy_form_reg">
                 <div class="orders__buy_form__country orders__buy_form__country_reg">
                   <h5 class="orders__buy_form__title orders__buy_form__title_reg">Выберите страну, где выкупать:</h5>
                   <div class="orders__buy_form__country_group"> 
@@ -418,37 +418,43 @@
                     </label>
                   </div>
                 </div>
-                <label class="addresses__main_form_label address__main_form_label__order">
-                  <div class="label__desc"><span>Полное название товара</span></div>
-                  <input class="addresses__main_form_input" type="text" placeholder="Используйте тоьлко латиницу, цифры и пробел">
-                </label>
-                <div class="address__form_wrap">
-                  <label class="addresses__main_form_label address__main_form_label__order_reg">
-                    <div class="label__desc"><span>Размер</span></div>
-                    <input class="addresses__main_form_input" type="text" placeholder="Используйте только цифры">
-                  </label>
-                  <label class="addresses__main_form_label address__main_form_label__order_reg">
-                    <div class="label__desc"><span>Цвет</span></div>
-                    <input class="addresses__main_form_input" type="text" placeholder="Используйте только латиницу">
-                  </label>
-                  <label class="addresses__main_form_label address__main_form_label__order_reg">
-                    <div class="label__desc"><span>Количество</span></div>
-                    <input class="addresses__main_form_input" type="text" placeholder="Используйте только цифры">
-                  </label>
-                  <label class="addresses__main_form_label address__main_form_label__order_reg">
-                    <div class="label__desc"><span>Цена за еденицу</span></div>
-                    <input class="addresses__main_form_input" type="text" placeholder="Используйте только цифры">
-                  </label>
+                <div class="order__reg_form__wrap">
+                  <div class="order__reg_form__group">     
+                    <label class="addresses__main_form_label address__main_form_label__order">
+                      <div class="label__desc"><span>Полное название товара</span></div>
+                      <input class="addresses__main_form_input" type="text" placeholder="Используйте тоьлко латиницу, цифры и пробел">
+                    </label>
+                    <div class="address__form_wrap">
+                      <label class="addresses__main_form_label address__main_form_label__order_reg">
+                        <div class="label__desc"><span>Размер</span></div>
+                        <input class="addresses__main_form_input" type="text" placeholder="Используйте только цифры">
+                      </label>
+                      <label class="addresses__main_form_label address__main_form_label__order_reg">
+                        <div class="label__desc"><span>Цвет</span></div>
+                        <input class="addresses__main_form_input" type="text" placeholder="Используйте только латиницу">
+                      </label>
+                      <label class="addresses__main_form_label address__main_form_label__order_reg">
+                        <div class="label__desc"><span>Количество</span></div>
+                        <input class="addresses__main_form_input" type="text" placeholder="Используйте только цифры">
+                      </label>
+                      <label class="addresses__main_form_label address__main_form_label__order_reg">
+                        <div class="label__desc"><span>Цена за еденицу</span></div>
+                        <input class="addresses__main_form_input" type="text" placeholder="Используйте только цифры">
+                      </label>
+                    </div>
+                  </div>
                 </div>
                 <div class="buttons__wrap">
                   <button class="admin__button" type="submit">ОФОРМИТЬ</button>
-                  <button class="admin__button yellow__text" type="submit">ДОБАВИТЬ +</button>
+                  <div class="buttons__wrap_right"> 
+                    <button class="admin__button yellow__text order__reg_add" type="submit">ДОБАВИТЬ +</button>
+                  </div>
                 </div>
               </form>
             </div>
           </div>
         </li>
-        <li class="main__sidebar_content__item main__sidebar_content__item_ballance"> 
+        <li class="main__sidebar_content__item main__sidebar_content__item_balance"> 
           <div class="admin__main">
             <div class="orders__header">
               <ul class="list orders__tabs">
@@ -458,65 +464,210 @@
                 <li class="orders__tabs_item">ПРОЧЕЕ </li>
               </ul>
             </div>
+            <h4 class="order__title order__title__balance">Мой баланс</h4>
+            <p class="order__subtitle">Тут Вы можете увидеть поступления и списания средств с Вашего баланса</p>
+            <div class="order__table_wrap order__table_wrap__balance">
+              <table class="order__table"> 
+                <thead class="order__table_thead"> 
+                  <tr>
+                    <td>Номер</td>
+                    <td>Дата</td>
+                    <td>Сумма</td>
+                    <td>Примечания          </td>
+                  </tr>
+                </thead>
+                <tbody class="order__table_tbody">
+                  <tr>
+                    <td>42424242</td>
+                    <td>05.02.2021</td>
+                    <td>102.33</td>
+                    <td>Наличными (100$ + 0сом)</td>
+                  </tr>
+                  <tr>
+                    <td>42424242</td>
+                    <td>05.02.2021</td>
+                    <td>102.33</td>
+                    <td>Наличными (100$ + 0сом)</td>
+                  </tr>
+                  <tr>
+                    <td>42424242</td>
+                    <td>05.02.2021</td>
+                    <td>102.33</td>
+                    <td>Наличными (100$ + 0сом)</td>
+                  </tr>
+                  <tr>
+                    <td>42424242</td>
+                    <td>05.02.2021</td>
+                    <td>102.33</td>
+                    <td>Наличными (100$ + 0сом)</td>
+                  </tr>
+                  <tr>
+                    <td>42424242</td>
+                    <td>05.02.2021</td>
+                    <td>102.33</td>
+                    <td>Наличными (100$ + 0сом)</td>
+                  </tr>
+                  <tr>
+                    <td>42424242</td>
+                    <td>05.02.2021</td>
+                    <td>102.33</td>
+                    <td>Наличными (100$ + 0сом)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </li>
         <li class="main__sidebar_content__item main__sidebar_content__item_settings">
           <div class="admin__main">
-            <h3 class="settings__title">Личные данные</h3>
-            <div class="settings__block">
-              <h4 class="settings__block_title">Основная информация</h4><span class="settings__block_desc">Данная информация видна только нашим администраторам</span>
-              <ul class="list settings__list"> 
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Имя</span></div>
-                  <div class="settings__item_value"> <span>Иван</span></div>
-                </li>
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Фамилия</span></div>
-                  <div class="settings__item_value"> <span>Иванов</span></div>
-                </li>
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Отчество</span></div>
-                  <div class="settings__item_value"> <span>Иванович</span></div>
-                </li>
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Логин</span></div>
-                  <div class="settings__item_value"> <span>ivanov@gmail.com</span></div>
-                </li>
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Пароль</span></div>
-                  <div class="settings__item_value"> <span>********</span></div>
-                </li>
-              </ul>
+            <div class="setting__content">
+              <h3 class="settings_title">Личные данные</h3>
+              <div class="settings_block">
+                <h4 class="settings__block_title">Основная информация</h4><span class="settings__block_desc">Данная информация видна только нашим администраторам</span>
+                <ul class="list settings__list"> 
+                  <li class="settings__item">
+                    <div class="settings__item_name"> <span>Имя</span></div>
+                    <div class="settings__item_value"> <span>Иван</span></div>
+                  </li>
+                  <li class="settings__item">
+                    <div class="settings__item_name"> <span>Фамилия</span></div>
+                    <div class="settings__item_value"> <span>Иванов</span></div>
+                  </li>
+                  <li class="settings__item">
+                    <div class="settings__item_name"> <span>Отчество</span></div>
+                    <div class="settings__item_value"> <span>Иванович</span></div>
+                  </li>
+                  <li class="settings__item">
+                    <div class="settings__item_name"> <span>Логин</span></div>
+                    <div class="settings__item_value"> <span>ivanov@gmail.com</span></div>
+                  </li>
+                  <li class="settings__item">
+                    <div class="settings__item_name"> <span>Пароль</span></div>
+                    <div class="settings__item_value"> <span>********</span></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="settings_block">
+                <h4 class="settings__block_title">Контактная информация</h4><span class="settings__block_desc">Данная информация видна только нашим администраторам</span>
+                <ul class="list settings__list"> 
+                  <li class="settings__item settings__item_changeble" data-name="email">
+                    <div class="settings__item_name"> <span>Электронная почта</span></div>
+                    <div class="settings__item_value"> <span>mail@gmail.com</span></div>
+                  </li>
+                  <li class="settings__item settings__item_changeble" data-name="phone">
+                    <div class="settings__item_name"> <span>Телефон</span></div>
+                    <div class="settings__item_value"> <span>0(555)555555      </span></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="settings_block">
+                <h4 class="settings__block_title">Адреса</h4><span class="settings__block_desc">Данная информация видна только нашим администраторам</span>
+                <ul class="list settings__list">
+                  <li class="settings__item settings__item_changeble" data-name="address">
+                    <div class="settings__item_name"> <span>Адрес по прописке</span></div>
+                    <div class="settings__item_value"> <span>г. Бишкек, ул. Новоселова, д. 144</span></div>
+                  </li>
+                  <li class="settings__item settings__item_changeble" data-name="delivery">
+                    <div class="settings__item_name"> <span>Адрес для доставки</span></div>
+                    <div class="settings__item_value"> <span>г. Бишкек, ул. Новоселова, д. 144</span></div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="settings__block">
-              <h4 class="settings__block_title">Контактная информация</h4><span class="settings__block_desc">Данная информация видна только нашим администраторам</span>
-              <ul class="list settings__list"> 
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Электронная почта</span></div>
-                  <div class="settings__item_value"> <span>mail@gmail.com</span></div>
-                </li>
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Телефон</span></div>
-                  <div class="settings__item_value"> <span>0(555)555555      </span></div>
-                </li>
-              </ul>
+            <div class="settings_change settings_change__email">
+              <div class="settings_change_header"><a class="link settings_link__backward icon-backward" href="#"></a>
+                <h3 class="settings_title">Сменить Почту</h3>
+              </div>
+              <div class="settings_block settings_block__new_email"><span class="settings__block_desc settings__block_desc__email">Изменение почтового адреса</span>
+                <form class="settings_form settings_form__mail">
+                  <label class="settings_form_label">
+                    <input class="addresses__main_form_input" type="email" required placeholder="Введите новый email">
+                  </label>
+                  <button class="admin__button" type="submit">Сохранить</button>
+                </form>
+              </div>
             </div>
-            <div class="settings__block">
-              <h4 class="settings__block_title">Адреса</h4><span class="settings__block_desc">Данная информация видна только нашим администраторам</span>
-              <ul class="list settings__list"> 
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Адрес по прописке</span></div>
-                  <div class="settings__item_value"> <span>г. Бишкек, ул. Новоселова, д. 144</span></div>
-                </li>
-                <li class="settings__item">
-                  <div class="settings__item_name"> <span>Адрес для доставки</span></div>
-                  <div class="settings__item_value"> <span>г. Бишкек, ул. Новоселова, д. 144    </span></div>
-                </li>
-              </ul>
+            <div class="settings_change settings_change__phone">
+              <div class="settings_change_header"><a class="link settings_link__backward icon-backward" href="#"></a>
+                <h3 class="settings_title">Сменить Номер Телефона</h3>
+              </div>
+              <div class="settings_block settings_block__new_phone"><span class="settings__block_desc settings__block_desc__email">Изменение почтового адреса</span>
+                <form class="settings_form">
+                  <div class="settings_form_group">
+                    <label class="settings_form_label">
+                      <input class="addresses__main_form_input" type="text" required placeholder="Введите новые телефон">
+                    </label>
+                  </div>
+                  <button class="admin__button" type="submit">Сохранить</button>
+                  <button class="admin__button admin__button_phone">Добавить еще телефон</button>
+                </form>
+              </div>
+            </div>
+            <div class="settings_change settings_change__address">
+              <div class="settings_change_header"><a class="link settings_link__backward icon-backward" href="#"></a>
+                <h3 class="settings_title">Сменить Адрес</h3>
+              </div>
+              <div class="settings_block settings_block__new_phone"><span class="settings__block_desc settings__block_desc__email">Изменение адреса</span>
+                <form class="settings_form">
+                  <label class="settings_form_label">
+                    <input class="addresses__main_form_input" type="text" required placeholder="Введите новый адрес">
+                  </label>
+                  <button class="admin__button" type="submit">Сохранить</button>
+                </form>
+              </div>
+            </div>
+            <div class="settings_change settings_change__delivery">
+              <div class="settings_change_header"><a class="link settings_link__backward icon-backward" href="#"></a>
+                <h3 class="settings_title">Сменить Адрес Доставки</h3>
+              </div>
+              <div class="settings_block settings_block__new_phone"><span class="settings__block_desc settings__block_desc__email">Изменение адреса доставки</span>
+                <form class="settings_form">
+                  <label class="settings_form_label">
+                    <input class="addresses__main_form_input" type="text" required placeholder="Введите новый адрес доставки">
+                  </label>
+                  <button class="admin__button" type="submit">Сохранить</button>
+                </form>
+              </div>
             </div>
           </div>
         </li>
-        <li class="main__sidebar_content__item main__sidebar_content__item_notify"></li>
+        <li class="main__sidebar_content__item main__sidebar_content__item_notify">
+          <div class="admin__main">
+            <div class="settings_block">
+              <h4 class="settings_block__title">Вы подписаны на следующие обновления:</h4><span class="settings_block__desc">Данная информация видна только нашим администраторам</span>
+              <form class="settings_block__form">
+                <label class="settings_form__label"><span class="settings_form__title settings_form__title_news">Новости</span>
+                  <input class="settings_form__checkbox" type="checkbox" name="news">
+                  <div class="settings_form__fake_checkbox"> </div>
+                </label>
+                <label class="settings_form__label"><span class="settings_form__title settings_form__title_storage">Принятие на склад</span>
+                  <input class="settings_form__checkbox" type="checkbox" name="storage">
+                  <div class="settings_form__fake_checkbox"> </div>
+                </label>
+                <label class="settings_form__label"><span class="settings_form__title settings_form__title_departude">Вылет</span>
+                  <input class="settings_form__checkbox" type="checkbox" name="departure">
+                  <div class="settings_form__fake_checkbox"> </div>
+                </label>
+                <label class="settings_form__label"><span class="settings_form__title settings_form__title_arrival">Прибытие</span>
+                  <input class="settings_form__checkbox" type="checkbox" name="arrival">
+                  <div class="settings_form__fake_checkbox"> </div>
+                </label>
+                <label class="settings_form__label"><span class="settings_form__title settings_form__title_personal">Личные</span>
+                  <input class="settings_form__checkbox" type="checkbox" name="personal">
+                  <div class="settings_form__fake_checkbox"> </div>
+                </label>
+                <label class="settings_form__label"><span class="settings_form__title settings_form__title_whatsapp">What's App</span>
+                  <input class="settings_form__checkbox" type="checkbox" name="wratsapp">
+                  <div class="settings_form__fake_checkbox"> </div>
+                </label>
+                <label class="settings_form__label"><span class="settings_form__title settings_form__title_telegram">Telegram</span>
+                  <input class="settings_form__checkbox" type="checkbox" name="telegram">
+                  <div class="settings_form__fake_checkbox"></div>
+                </label>
+              </form>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
     <script src="js/libs.min.js"></script>

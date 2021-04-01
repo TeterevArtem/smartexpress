@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'admin';
-  src:  url('fonts/admin.eot?slxth');
-  src:  url('fonts/admin.eot?slxth#iefix') format('embedded-opentype'),
-    url('fonts/admin.ttf?slxth') format('truetype'),
-    url('fonts/admin.woff?slxth') format('woff'),
-    url('fonts/admin.svg?slxth#admin') format('svg');
+  src:  url('fonts/admin.eot?nxe6aw');
+  src:  url('fonts/admin.eot?nxe6aw#iefix') format('embedded-opentype'),
+    url('fonts/admin.ttf?nxe6aw') format('truetype'),
+    url('fonts/admin.woff?nxe6aw') format('woff'),
+    url('fonts/admin.svg?nxe6aw#admin') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,37 +28,60 @@
 .icon-addresses:before {
   content: "\e900";
 }
-.icon-arrow_drop_down:before {
+.icon-arrival:before {
   content: "\e901";
 }
-.icon-ballance:before {
+.icon-arrow_drop_down:before {
   content: "\e902";
-  color: #999;
+}
+.icon-backward:before {
+  content: "\e903";
+}
+.icon-ballance:before {
+  content: "\e904";
+  color: #2287b9;
 }
 .icon-delivery:before {
-  content: "\e903";
+  content: "\e905";
   color: #1487c0;
 }
-.icon-message:before {
-  content: "\e904";
-}
-.icon-news:before {
-  content: "\e905";
-}
-.icon-notify:before {
+.icon-departude:before {
   content: "\e906";
 }
-.icon-office:before {
+.icon-dollar-symbol:before {
   content: "\e907";
 }
-.icon-plane:before {
+.icon-message:before {
   content: "\e908";
-  color: #999;
 }
-.icon-settings:before {
+.icon-news:before {
   content: "\e909";
 }
-.icon-warning:before {
+.icon-notify:before {
   content: "\e90a";
+}
+.icon-office:before {
+  content: "\e90b";
+}
+.icon-personal:before {
+  content: "\e90c";
+}
+.icon-settings:before {
+  content: "\e90d";
+}
+.icon-settings_news:before {
+  content: "\e90e";
+}
+.icon-storage:before {
+  content: "\e90f";
+}
+.icon-telegram:before {
+  content: "\e910";
+}
+.icon-warning:before {
+  content: "\e911";
   color: #f11;
+}
+.icon-whatsapp:before {
+  content: "\e912";
 }
