@@ -89,40 +89,16 @@
             </form>
             <form class="popup__form sign__form" id="sign__form_3">
               <div class="sign__form__text">
-                <p>Cкан <span class="bold__text">ID-карты </span>с лицевой стороны</p>
+                <p>Cкан <span class="bold__text">ID-карты </span>с лицевой и обратной стороны</p>
               </div>
-              <div class="drop__area_block" id="drop__area_front">
-                <div class="signin__file__block">
-                  <div class="gallery"></div>
+              <div class="form__group form__group_file">
+                <label class="signin__label signin_label__file" for="file">
                   <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
                     <figcaption class="signin__photo_caption">Нет фото</figcaption>
                   </figure>
-                  <div class="form__group">
-                    <label class="signin__label">
-                      <input class="signin__input_file" type="file" name="doc-front" accept="image/jpeg,image/png">
-                      <div class="signin__file__fake">Выбрать файл</div>
-                    </label><span class="messages"> </span>
-                  </div>
-                </div>
-                <progress class="progress-bar" max="100" value="0"></progress>
-              </div>
-              <div class="sign__form__text">
-                <p>Cкан <span class="bold__text">ID-карты </span>с лицевой стороны</p>
-              </div>
-              <div class="drop__area_block" id="drop__area_back">
-                <div class="signin__file__block">
-                  <div class="gallery"></div>
-                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
-                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
-                  </figure>
-                  <div class="form__group">
-                    <label class="signin__label">
-                      <input class="signin__input_file" type="file" name="doc-back" accept="image/jpeg,image/png">
-                      <div class="signin__file__fake">Выбрать файл</div>
-                    </label><span class="messages"> </span>
-                  </div>
-                </div>
-                <progress class="progress-bar" max="100" value="0"></progress>
+                </label>
+                <input class="signin__input_file" id="file" type="file" name="docs" multiple accept="image/jpeg,image/png">
+                <progress class="progress_bar" max="100" value="0"></progress><span class="messages"></span>
               </div>
               <label class="signin__label">
                 <button class="signin__input_file" id="reset" type="reset"></button>
@@ -182,6 +158,43 @@
           </div>
         </div>
       </section>
+      <ul class="list mobile__menu_list"> 
+        <li class="mobile__menu_item"> <a class="link mobile__menu_btn mobile__menu_btn-signin round__button" href="#"></a><span class="mobile__menu_text">Профиль</span></li>
+        <li class="mobile__menu_item"> <a class="link mobile__menu_btn mobile__menu_btn-menu round__button" href="#"></a><span class="mobile__menu_text">Меню</span></li>
+        <li class="mobile__menu_item"> <a class="link mobile__menu_btn mobile__menu_btn-calc round__button" href="#"></a><span class="mobile__menu_text">Калькулятор</span></li>
+      </ul>
+      <div class="mobile__menu">
+        <div class="container">
+          <ul class="list mobile__inner_menu">
+            <li class="mobile__inner_menu_item"><a class="link mobile__inner_menu_link active" href="#">Главная</a></li>
+            <li class="mobile__inner_menu_item"><a class="link mobile__inner_menu_link" href="#">О нас</a></li>
+            <li class="mobile__inner_menu_item"><a class="link mobile__inner_menu_link" href="#">Как это работает</a></li>
+            <li class="mobile__inner_menu_item"><a class="link mobile__inner_menu_link" href="#">Отслеживание</a></li>
+            <li class="mobile__inner_menu_item"><a class="link mobile__inner_menu_link" href="#">FAQ</a></li>
+          </ul>
+          <ul class="list mobile__checkbox_list"> 
+            <li class="mobile__checkbox_item">
+              <form class="theme_form">
+                <label class="theme_form__label">
+                  <input class="theme_form__input" type="checkbox" name="theme-color">
+                  <div class="fake__theme-color_checkbox">
+                    <div class="fake__theme-color-inner"></div>
+                  </div>
+                </label>
+              </form>
+            </li>
+            <li class="mobile__checkbox_item">
+              <form class="lang__form">
+                <select class="lang__form_select">
+                  <option name="ru" value="RU">Рус</option>
+                  <option name="en" value="EN">Eng</option>
+                </select>
+              </form>
+            </li>
+          </ul>
+          <div class="mobile__close_block">    <a class="link mobile__menu_close_link" href="#"><span class="mobile__menu_close_text">Закрыть</span></a></div>
+        </div>
+      </div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -206,8 +219,14 @@
                           <li class="popup__contact_item"><span>Почтовый адрес</span><a href="mailto:info@smartex.kg">info@smartex.kg</a></li>
                         </ul>
                       </div>
+                      <div class="popup popup_map"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title popup_map__title">Где мы находимся</h4>
+                        <div class="header_map" id="map"></div>
+                      </div>
                     </li>
-                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item">
+                      <div class="header_logo_block"></div>
+                    </li>
                     <li class="header__item header__item_login">
                       <ul class="list auth__list">
                         <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
@@ -235,23 +254,24 @@
                   </ul>
                 </div>
               </header>
-              <header class="header__mobile"> 
-                <div class="header__logo"><img src="images/logo-mobile.svg" alt="logo"></div>
-                <ul class="list contacts__list"> 
-                  <li class="contacts__item"><a class="link contacts__link" href="#"><span class="header__link_text">+996 550 237 676</span>
-                      <div class="round__button round__button_phone"></div></a></li>
-                  <li class="contacts__item"><a class="link contacts__link" href="#"><span class="header__link_text">г.Бишкек, Киевская 155</span>
-                      <div class="round__button round__button_point"></div></a></li>
-                </ul>
-              </header>
               <main class="main first__main">
                 <div class="container first__container">
-                  <form class="lang__form">
-                    <select class="lang__form_select">
-                      <option name="ru" value="RU">Рус</option>
-                      <option name="en" value="EN">Eng</option>
-                    </select>
-                  </form>
+                  <div class="first__theme_block">
+                    <form class="theme_form">
+                      <label class="theme_form__label">
+                        <input class="theme_form__input" type="checkbox" name="theme-color">
+                        <div class="fake__theme-color_checkbox">
+                          <div class="fake__theme-color-inner"></div>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="lang__form">
+                      <select class="lang__form_select">
+                        <option name="ru" value="RU">Рус</option>
+                        <option name="en" value="EN">Eng</option>
+                      </select>
+                    </form>
+                  </div>
                   <div class="map__container">
                     <div class="map">
                       <div class="plane"></div>
@@ -308,6 +328,27 @@
                         <div class="round__button round__button_calc"></div><span class="first__bottom_right_text">Калькулятор </span></a>
                     </li>
                   </ul>
+                </div>
+              </main>
+              <main class="first__main_mobile">
+                <div class="container">
+                  <h2 class="first__title_mobile">Мы доставим ваши посылки из:</h2>
+                  <div class="first__main_tabs"> 
+                    <ul class="list first__tabs_content">
+                      <li class="first__content_items active first__content_items-usa"><img src="images/country/usa.svg" alt="usa"></li>
+                      <li class="first__content_items first__content_items-russia"><img src="images/country/russia.svg" alt="russia"></li>
+                      <li class="first__content_items first__content_items-china"><img src="images/country/china.svg" alt="china"></li>
+                      <li class="first__content_items first__content_items-es"><img src="images/country/es.svg" alt="eu"></li>
+                      <li class="first__content_items first__content_items-turkey"><img src="images/country/turkey.svg" alt="turkey"></li>
+                    </ul>
+                    <ul class="list first__tabs_list">
+                      <li class="first__tabs__item active"><a class="link first__tabs__link" href="usa">США</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="russia">Российская Федерации</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="china">Китай</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="es">ЕС</a></li>
+                      <li class="first__tabs__item"><a class="link first__tabs__link" href="turkey">Турция</a></li>
+                    </ul>
+                  </div>
                 </div>
               </main>
               <div class="footer__container"></div>
@@ -726,8 +767,14 @@
                           <li class="popup__contact_item"><span>Почтовый адрес</span><a href="mailto:info@smartex.kg">info@smartex.kg</a></li>
                         </ul>
                       </div>
+                      <div class="popup popup_map"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title popup_map__title">Где мы находимся</h4>
+                        <div class="header_map" id="map"></div>
+                      </div>
                     </li>
-                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item">
+                      <div class="header_logo_block"></div>
+                    </li>
                     <li class="header__item header__item_login">
                       <ul class="list auth__list">
                         <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
@@ -762,7 +809,7 @@
                       <h2 class="page__title fourth__title">Отслеживание</h2>
                       <form class="fourth__form">
                         <input class="fourth__form_input" type="search" placeholder="Введите ваш номер трека тут!!!">
-                        <button class="fouth__form_button" type="submit">Отследить</button>
+                        <button class="fourth__form_button" type="submit">Отследить</button>
                       </form><span class="form__desc">Введите как минимум 8 последних знаков Вашего номера и нажмите <span class="yellow__text">"ОТСЛЕДИТЬ"</span></span>
                       <h5 class="fourth__subtitle">Текущий статус</h5>
                       <div class="progressbar progressbar__tracking">
@@ -824,7 +871,7 @@
                       </div>
                     </div>
                   </div>
-                  <h2 class="page__title fourth__title fouth__title_news">Новости</h2>
+                  <h2 class="page__title fourth__title fourth__title_news">Новости</h2>
                   <ul class="list news__list">
                     <li class="news__item">
                       <div class="news__item_wrap">
@@ -942,8 +989,14 @@
                           <li class="popup__contact_item"><span>Почтовый адрес</span><a href="mailto:info@smartex.kg">info@smartex.kg</a></li>
                         </ul>
                       </div>
+                      <div class="popup popup_map"><a class="link popup__close" href="#"></a>
+                        <h4 class="login__title popup_map__title">Где мы находимся</h4>
+                        <div class="header_map" id="map"></div>
+                      </div>
                     </li>
-                    <li class="header__item"><img src="images/logo1.svg" alt="logo"></li>
+                    <li class="header__item">
+                      <div class="header_logo_block"></div>
+                    </li>
                     <li class="header__item header__item_login">
                       <ul class="list auth__list">
                         <li class="auth__item"><a class="link auth__link auth__link_signin" href="#"> <span class="header__link_text">Регистрация</span>
