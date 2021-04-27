@@ -1,0 +1,24 @@
+{
+  "costs": [
+    {
+      "country": "США",
+      "price": "9.5$"
+    },
+    {
+      "country": "Россия",
+      "price": "5$"
+    },
+    {
+      "country": "Турция",
+      "price": "4.5$"
+    },
+    {
+      "country": "Китай",
+      "price": "6$"
+    },
+    {
+      "country": "ЕС",
+      "price": "12$"
+    }
+  ]
+}

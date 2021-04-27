@@ -92,12 +92,14 @@
                 <p>Cкан <span class="bold__text">ID-карты </span>с лицевой и обратной стороны</p>
               </div>
               <div class="form__group form__group_file">
-                <label class="signin__label signin_label__file" for="file">
-                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
-                    <figcaption class="signin__photo_caption">Нет фото</figcaption>
-                  </figure>
-                </label>
                 <input class="signin__input_file" id="file" type="file" name="docs" multiple accept="image/jpeg,image/png">
+                <label class="signin__label signin_label__file" for="file">
+                  <div id="droparea">
+                    <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                      <figcaption class="signin__photo_caption">Нет фото</figcaption>
+                    </figure>
+                  </div>
+                </label>
                 <progress class="progress_bar" max="100" value="0"></progress><span class="messages"></span>
               </div>
               <label class="signin__label">
@@ -335,13 +337,7 @@
                 <div class="container">
                   <h2 class="first__title_mobile">Мы доставим ваши посылки из:</h2>
                   <div class="first__main_tabs"> 
-                    <ul class="list first__tabs_content">
-                      <li class="first__content_items active first__content_items-usa"><img src="images/country/usa.svg" alt="usa"></li>
-                      <li class="first__content_items first__content_items-russia"><img src="images/country/russia.svg" alt="russia"></li>
-                      <li class="first__content_items first__content_items-china"><img src="images/country/china.svg" alt="china"></li>
-                      <li class="first__content_items first__content_items-es"><img src="images/country/es.svg" alt="eu"></li>
-                      <li class="first__content_items first__content_items-turkey"><img src="images/country/turkey.svg" alt="turkey"></li>
-                    </ul>
+                    <ul class="list first__tabs_content"></ul>
                     <ul class="list first__tabs_list">
                       <li class="first__tabs__item active"><a class="link first__tabs__link" href="usa">США</a></li>
                       <li class="first__tabs__item"><a class="link first__tabs__link" href="russia">Российская Федерации</a></li>

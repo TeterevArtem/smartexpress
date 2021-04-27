@@ -1,19 +1,9 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "country" : [
+    {"countryName" : "США", "src": "images/country/usa.svg", "alt": "usa", "price" : "9.5$", "text" : "Срок доставки - от 14 до 28 суток"},
+    {"countryName" : "Россия", "src": "images/country/russia.svg", "alt": "russia", "price" : "5$", "text" : "Срок доставки - от 14 до 28 суток"},
+    {"countryName" : "Китай", "src": "images/country/china.svg", "alt": "china",  "price" : "6$", "text" : "Срок доставки - от 14 до 28 суток"},
+    {"countryName" : "ЕС", "src": "images/country/es.svg", "alt": "es", "price" : "12$", "text" : "Срок доставки - от 14 до 28 суток"},
+    {"countryName" : "Турция", "src": "images/country/turkey.svg", "alt": "turkey", "price" : "4.5$", "text" : "Срок доставки - от 14 до 28 суток"}
+  ]
 }
