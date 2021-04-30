@@ -91,17 +91,17 @@
               <div class="sign__form__text">
                 <p>Cкан <span class="bold__text">ID-карты </span>с лицевой и обратной стороны</p>
               </div>
-              <div class="form__group form__group_file">
-                <input class="signin__input_file" id="file" type="file" name="docs" multiple accept="image/jpeg,image/png">
-                <label class="signin__label signin_label__file" for="file">
-                  <div id="droparea">
-                    <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
-                      <figcaption class="signin__photo_caption">Нет фото</figcaption>
-                    </figure>
-                  </div>
-                </label>
-                <progress class="progress_bar" max="100" value="0"></progress><span class="messages"></span>
+              <div id="droparea">
+                <div class="form__group form__group_file">
+                  <input class="signin__input_file" id="fileElem" type="file" name="docs" multiple accept="image/jpeg,image/png">
+                  <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
+                    <figcaption class="signin__photo_caption">Нет фотo</figcaption>
+                  </figure>
+                  <label class="signin__label signin_label__file" for="fileElem">Выберите файл</label>
+                </div>
+                <div id="gallery"></div>
               </div>
+              <progress class="progress_bar" max="100" value="0"></progress><span class="messages" id="fileFormMessage"></span>
               <label class="signin__label">
                 <button class="signin__input_file" id="reset" type="reset"></button>
                 <div class="signin__file__fake signin__fale__fake_reset">Удалить файлы</div>
@@ -115,7 +115,7 @@
                   <p>После того, как Вы нажмете кнопку зарегистрировать, Вам придет письмо на почту для активации аккаунта. При его активации потребуется пин-код, который придет Вам на телефон. Таким образом, Вы подтвердите свой адрес электронной почты и номер телефона.</p>
                 </div>
               </div>
-              <button class="popup__button signin__popup_button" id="submit" type="submit">Зарегистрировать</button>
+              <button class="popup__button signin__popup_button" id="submit" type="submit" disabled>Зарегистрировать</button>
             </form>
             <div class="progressbar signin__progressbar">
               <div class="progress__point signin__progress_point"></div><span class="progress__text">Шаг 1</span>
