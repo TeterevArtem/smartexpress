@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'main';
+  src:  url('fonts/main.eot?hqaeya');
+  src:  url('fonts/main.eot?hqaeya#iefix') format('embedded-opentype'),
+    url('fonts/main.ttf?hqaeya') format('truetype'),
+    url('fonts/main.woff?hqaeya') format('woff'),
+    url('fonts/main.svg?hqaeya#main') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="main-"], [class*=" main-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'main' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-menu:before {
+  content: "\e90a";
+}
+.main-check:before {
+  content: "\e908";
+}
+.main-remove:before {
+  content: "\e909";
+  color: #012b5b;
+}
+.main-close-big:before {
+  content: "\e906";
+}
+.main-close:before {
+  content: "\e907";
+}
+.main-calc:before {
+  content: "\e900";
+}
+.main-login:before {
+  content: "\e901";
+}
+.main-phone:before {
+  content: "\e902";
+}
+.main-point:before {
+  content: "\e903";
+}
+.main-search:before {
+  content: "\e904";
+}
+.main-signin:before {
+  content: "\e905";
+}
