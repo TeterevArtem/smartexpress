@@ -95,7 +95,7 @@
             </div>
             <div id="droparea">
               <div class="form__group form__group_file">
-                <input class="signin__input_file" id="fileElem" type="file" name="docs" multiple accept="image/jpeg,image/png">
+                <input class="signin__input_file" id="fileElem" type="file" multiple accept="image/jpeg,image/png">
                 <figure class="signin__figure"><img src="images/svg/sprite.svg#placeholder" alt="photo preview">
                   <figcaption class="signin__photo_caption">Нет фотo</figcaption>
                 </figure>
@@ -107,11 +107,11 @@
             <div class="messages" id="fileFormMessage"></div>
             <label class="signin__label">
               <button class="signin__input_file" id="reset" type="reset"></button>
-              <div class="signin__file__fake signin__fale__fake_reset">Удалить файлы</div>
+              <div class="signin__file__fake signin__file__fake_reset">Удалить файлы</div>
             </label>
             <div class="form__group">
               <label class="popup__form_label popup__form_label_checkbox">
-                <input class="popup__form_checkbox" type="checkbox" name="checkbox">
+                <input class="popup__form_checkbox" type="checkbox" name="license">
                 <div class="popup__form_fake__checkbox"></div><span class="popup__form_checkbox_text red__text">- Я согласен с публичной офертой</span><span class="messages"></span>
               </label>
               <div class="sign__form__text"> 
@@ -123,30 +123,29 @@
           <div class="progressbar signin__progressbar">
             <div class="progress__point signin__progress_point"></div><span class="progress__text">Шаг 1</span>
           </div>
-        </div>
-        <div class="popup__form sign__form success__popup"><a class="link popup__close" href="#"></a>
-          <h4 class="login__title sign__form_title">Регистрация</h4>
-          <div class="success__image"> <img src="images/svg/sprite.svg#success" alt="success icon"></div>
-          <div class="sign__form__text sign__form__text_p0">
-            <p>Вам было выслано письмо на почту и код-активации используйте их для того чтобы завершить регистрацию!</p>
+          <div id="sign_form__success">
+            <div class="success__image"> <img src="images/svg/sprite.svg#success" alt="success icon"></div>
+            <div class="sign__form__text sign__form__text_p0">
+              <p>Вам было выслано письмо на почту и код-активации используйте их для того чтобы завершить регистрацию!</p>
+            </div>
+            <div class="success__main_image"> <img src="images/MacBook.svg" alt="macbook photo"></div>
           </div>
-          <div class="success__main_image"> <img src="images/MacBook.svg" alt="macbook photo"></div>
-        </div>
-        <div class="popup__form sign__form activate__popup"> <a class="link popup__close" href="#"></a>
-          <h4 class="login__title sign__form_title activate__title">Активация учетной записи</h4>
-          <div class="activate__image"> <img src="images/svg/sprite.svg#round_mail" alt="email icon"></div>
-          <div class="activate__bold_text"> 
-            <p>Было отправлено SMS на номер 996556566818</p>
+          <div id="sign_form__confirm">
+            <h4 class="login__title sign__form_title activate__title">Активация учетной записи</h4>
+            <div class="activate__image"> <img src="images/svg/sprite.svg#round_mail" alt="email icon"></div>
+            <div class="activate__bold_text"> 
+              <p>Было отправлено SMS на номер 996556566818</p>
+            </div>
+            <div class="activate__form_text">
+              <p>Дождитесь сообщения с пин кодом, затем введите его в нижерасположенное поле и нажмите кнопку подтвердить:</p>
+            </div>
+            <form class="activate__form">
+              <label class="popup__form_label activate__form_label">
+                <input class="popup__form_input" type="text" name="pin" placeholder="Введите 4-х значный код"><span class="popup__form_text">Пин-код</span>
+              </label>
+              <button class="popup__button signin__popup_button" type="submit">Подтвердить</button>
+            </form>
           </div>
-          <div class="activate__form_text">
-            <p>Дождитесь сообщения с пин кодом, затем введите его в нижерасположенное поле и нажмите кнопку подтвердить:</p>
-          </div>
-          <form class="activate__form">
-            <label class="popup__form_label activate__form_label">
-              <input class="popup__form_input" type="text" name="pin" placeholder="Введите 4-х значный код"><span class="popup__form_text">Пин-код</span>
-            </label>
-            <button class="popup__button signin__popup_button" type="submit">Подтвердить</button>
-          </form>
         </div>
       </div>
       <section class="popup popup__block popup__block_news">
@@ -176,14 +175,9 @@
           </ul>
           <ul class="list mobile__checkbox_list"> 
             <li class="mobile__checkbox_item">
-              <form class="theme_form">
-                <label class="theme_form__label">
-                  <input class="theme_form__input" type="checkbox" name="theme-color">
-                  <div class="fake__theme-color_checkbox">
-                    <div class="fake__theme-color-inner"></div>
-                  </div>
-                </label>
-              </form>
+              <div class="fake__theme-color_checkbox">
+                <div class="fake__theme-color-inner"></div>
+              </div>
             </li>
             <li class="mobile__checkbox_item">
               <form class="lang__form">
@@ -260,14 +254,9 @@
               <main class="main first__main">
                 <div class="container first__container">
                   <div class="first__theme_block">
-                    <form class="theme_form">
-                      <label class="theme_form__label">
-                        <input class="theme_form__input" type="checkbox" name="theme-color">
-                        <div class="fake__theme-color_checkbox">
-                          <div class="fake__theme-color-inner"></div>
-                        </div>
-                      </label>
-                    </form>
+                    <div class="fake__theme-color_checkbox">
+                      <div class="fake__theme-color-inner"></div>
+                    </div>
                     <form class="lang__form">
                       <select class="lang__form_select">
                         <option name="ru" value="RU">Рус</option>
@@ -310,18 +299,26 @@
                                 <option name="china">China</option>
                               </select><span class="popup__form_text">Страна</span>
                             </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text" data-weight><span class="popup__form_text">Вес</span>
-                            </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text" data-height><span class="popup__form_text">Высота</span>
-                            </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text" data-width><span class="popup__form_text">Ширина</span>
-                            </label>
-                            <label class="popup__form_label">
-                              <input class="popup__form_input" type="text" data-length><span class="popup__form_text">Длинна</span>
-                            </label>
+                            <div class="form__group">
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text" data-weight name="weight"><span class="popup__form_text">Вес</span><span class="messages"></span>
+                              </label>
+                            </div>
+                            <div class="form__group">
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text" data-height name="height"><span class="popup__form_text">Высота</span><span class="messages"></span>
+                              </label>
+                            </div>
+                            <div class="form__group">   
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text" data-width name="width"><span class="popup__form_text">Ширина</span><span class="messages"></span>
+                              </label>
+                            </div>
+                            <div class="form__group">   
+                              <label class="popup__form_label">
+                                <input class="popup__form_input" type="text" data-length name="length"><span class="popup__form_text">Длинна</span><span class="messages"></span>
+                              </label>
+                            </div>
                             <article class="popup__form_desc"> </article>
                             <button class="popup__button" type="submit">Рассчитать</button>
                           </form>
@@ -598,18 +595,26 @@
                                   <option name="china">China</option>
                                 </select><span class="popup__form_text">Страна</span>
                               </label>
-                              <label class="popup__form_label">
-                                <input class="popup__form_input" type="text" data-weight><span class="popup__form_text">Вес</span>
-                              </label>
-                              <label class="popup__form_label">
-                                <input class="popup__form_input" type="text" data-height><span class="popup__form_text">Высота</span>
-                              </label>
-                              <label class="popup__form_label">
-                                <input class="popup__form_input" type="text" data-width><span class="popup__form_text">Ширина</span>
-                              </label>
-                              <label class="popup__form_label">
-                                <input class="popup__form_input" type="text" data-length><span class="popup__form_text">Длинна</span>
-                              </label>
+                              <div class="form__group">
+                                <label class="popup__form_label">
+                                  <input class="popup__form_input" type="text" data-weight name="weight"><span class="popup__form_text">Вес</span><span class="messages"></span>
+                                </label>
+                              </div>
+                              <div class="form__group">
+                                <label class="popup__form_label">
+                                  <input class="popup__form_input" type="text" data-height name="height"><span class="popup__form_text">Высота</span><span class="messages"></span>
+                                </label>
+                              </div>
+                              <div class="form__group">   
+                                <label class="popup__form_label">
+                                  <input class="popup__form_input" type="text" data-width name="width"><span class="popup__form_text">Ширина</span><span class="messages"></span>
+                                </label>
+                              </div>
+                              <div class="form__group">   
+                                <label class="popup__form_label">
+                                  <input class="popup__form_input" type="text" data-length name="length"><span class="popup__form_text">Длинна</span><span class="messages"></span>
+                                </label>
+                              </div>
                               <article class="popup__form_desc"> </article>
                               <button class="popup__button" type="submit">Рассчитать</button>
                             </form>
