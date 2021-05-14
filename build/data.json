@@ -1,9 +1,92 @@
 {
-  "costs" : [
-    {"country" : "США", "price" : "9.5$"},
-    {"country" : "Россия", "price" : "5$"},
-    {"country" : "Турция", "price" : "4.5$"},
-    {"country" : "Китай",  "price" : "6$"},
-    {"country" : "ЕС", "price" : "12$"}
+  "country": [
+    {
+      "countryName": "США",
+      "src": "images/country/usa.svg",
+      "alt": "usa",
+      "price": "9.5$",
+      "text": "Срок доставки - от 14 до 28 суток"
+    },
+    {
+      "countryName": "Россия",
+      "src": "images/country/russia.svg",
+      "alt": "russia",
+      "price": "5$",
+      "text": "Срок доставки - от 14 до 28 суток"
+    },
+    {
+      "countryName": "Китай",
+      "src": "images/country/china.svg",
+      "alt": "china",
+      "price": "6$",
+      "text": "Срок доставки - от 14 до 28 суток"
+    },
+    {
+      "countryName": "ЕС",
+      "src": "images/country/es.svg",
+      "alt": "es",
+      "price": "12$",
+      "text": "Срок доставки - от 14 до 28 суток"
+    },
+    {
+      "countryName": "Турция",
+      "src": "images/country/turkey.svg",
+      "alt": "turkey",
+      "price": "4.5$",
+      "text": "Срок доставки - от 14 до 28 суток"
+    }
+  ],
+  "countryTooltipInfo": [
+    {
+      "countryName": "KG",
+      "text": "Срок доставки - от 14 до 28 суток"
+    }
+  ],
+  "userData": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    }
   ]
 }
