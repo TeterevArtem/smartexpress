@@ -7,9 +7,13 @@
     <title>Личный кабинет</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="loader">
+    <div class="preloader"><span style="--i:1;"></span><span style="--i:2;"></span><span style="--i:3;"></span><span style="--i:4;"></span><span style="--i:5;"></span><span style="--i:6;"></span><span style="--i:7;"></span><span style="--i:8;"></span><span style="--i:9;"></span><span style="--i:10;"></span><span style="--i:11;"></span><span style="--i:12;"></span><span style="--i:13;"></span><span style="--i:14;"></span><span style="--i:15;"></span><span style="--i:16;"></span><span style="--i:17;"></span><span style="--i:18;"></span><span style="--i:19;"></span><span style="--i:20;"></span>
+      <div class="flight"></div>
+    </div>
     <div class="wrapper admin__wrapper">
-      <aside class="main__sidebar active">
+      <aside class="main__sidebar">
+        <div class="admin_menu_trigger"><span class="admin_menu_trigger__middle"></span></div>
         <div class="main__sidebar_wrap">
           <div class="main__sidebar_header">
             <div class="main__sidebar_block_info main__sidebar_block_info_balance"><span>Ваш баланс: 0 $</span></div>
@@ -34,7 +38,7 @@
           </div>
         </div>
       </aside>
-      <ul class="list main__sidebar_content__list active">
+      <ul class="list main__sidebar_content__list">
         <li class="main__sidebar_content__item main__sidebar_content__item_office active">
           <div class="admin__main">
             <div class="office__content office__content_main">
@@ -169,66 +173,72 @@
               <ul class="list addresses__examples_list">
                 <li class="addresses__example_item"> 
                   <h4 class="addresses__example_title">Заполнение на ebay.com (имена полей оригинальные):</h4>
-                  <div class="label__desc"><span>Full name / Name</span></div>
-                  <div class="addresses__example_block"> <span>ShorpoevSE IlyasSE</span></div>
-                  <div class="label__desc"><span>First name / Name</span></div>
-                  <div class="addresses__example_block"> <span>IlyasSE</span></div>
-                  <div class="label__desc"><span>Last name / Surname</span></div>
-                  <div class="addresses__example_block"> <span>ShorpoevSE</span></div>
-                  <div class="label__desc"><span>Street address / Street address 1 / Address line / Address line 1</span></div>
-                  <div class="addresses__example_block"> <span>181 Edgemoor Rd, SE-1g6</span></div>
-                  <div class="label__desc"><span>Street address 2 / Address line 2</span></div>
-                  <div class="addresses__example_block"> <span>#SE-1g6</span></div>
-                  <div class="label__desc"><span>City / Town</span></div>
-                  <div class="addresses__example_block"> <span>Wilmington</span></div>
-                  <div class="label__desc"><span>State / Province / Region</span></div>
-                  <div class="addresses__example_block"> <span>Delaware</span></div>
-                  <div class="label__desc"><span>ZIP / Zip code</span></div>
-                  <div class="addresses__example_block"> <span>19809</span></div>
-                  <div class="label__desc"><span>Country</span></div>
-                  <div class="addresses__example_block"> <span>United States</span></div>
+                  <div class="addresses__example_content">
+                    <div class="label__desc"><span>Full name / Name</span></div>
+                    <div class="addresses__example_block"> <span>ShorpoevSE IlyasSE</span></div>
+                    <div class="label__desc"><span>First name / Name</span></div>
+                    <div class="addresses__example_block"> <span>IlyasSE</span></div>
+                    <div class="label__desc"><span>Last name / Surname</span></div>
+                    <div class="addresses__example_block"> <span>ShorpoevSE</span></div>
+                    <div class="label__desc"><span>Street address / Street address 1 / Address line / Address line 1</span></div>
+                    <div class="addresses__example_block"> <span>181 Edgemoor Rd, SE-1g6</span></div>
+                    <div class="label__desc"><span>Street address 2 / Address line 2</span></div>
+                    <div class="addresses__example_block"> <span>#SE-1g6</span></div>
+                    <div class="label__desc"><span>City / Town</span></div>
+                    <div class="addresses__example_block"> <span>Wilmington</span></div>
+                    <div class="label__desc"><span>State / Province / Region</span></div>
+                    <div class="addresses__example_block"> <span>Delaware</span></div>
+                    <div class="label__desc"><span>ZIP / Zip code</span></div>
+                    <div class="addresses__example_block"> <span>19809</span></div>
+                    <div class="label__desc"><span>Country</span></div>
+                    <div class="addresses__example_block"> <span>United States</span></div>
+                  </div>
                 </li>
                 <li class="addresses__example_item"> 
                   <h4 class="addresses__example_title">Заполнение на hm.com (имена полей оригинальные):</h4>
-                  <div class="label__desc"><span>Full name / Name</span></div>
-                  <div class="addresses__example_block"> <span>ShorpoevSE IlyasSE</span></div>
-                  <div class="label__desc"><span>First name / Name</span></div>
-                  <div class="addresses__example_block"> <span>IlyasSE</span></div>
-                  <div class="label__desc"><span>Last name / Surname</span></div>
-                  <div class="addresses__example_block"> <span>ShorpoevSE</span></div>
-                  <div class="label__desc"><span>Street address / Street address 1 / Address line / Address line 1</span></div>
-                  <div class="addresses__example_block"> <span>181 Edgemoor Rd, SE-1g6</span></div>
-                  <div class="label__desc"><span>Street address 2 / Address line 2</span></div>
-                  <div class="addresses__example_block"> <span>#SE-1g6</span></div>
-                  <div class="label__desc"><span>City / Town</span></div>
-                  <div class="addresses__example_block"> <span>Wilmington</span></div>
-                  <div class="label__desc"><span>State / Province / Region</span></div>
-                  <div class="addresses__example_block"> <span>Delaware</span></div>
-                  <div class="label__desc"><span>ZIP / Zip code</span></div>
-                  <div class="addresses__example_block"> <span>19809</span></div>
-                  <div class="label__desc"><span>Country</span></div>
-                  <div class="addresses__example_block"> <span>United States</span></div>
+                  <div class="addresses__example_content">
+                    <div class="label__desc"><span>Full name / Name</span></div>
+                    <div class="addresses__example_block"> <span>ShorpoevSE IlyasSE</span></div>
+                    <div class="label__desc"><span>First name / Name</span></div>
+                    <div class="addresses__example_block"> <span>IlyasSE</span></div>
+                    <div class="label__desc"><span>Last name / Surname</span></div>
+                    <div class="addresses__example_block"> <span>ShorpoevSE</span></div>
+                    <div class="label__desc"><span>Street address / Street address 1 / Address line / Address line 1</span></div>
+                    <div class="addresses__example_block"> <span>181 Edgemoor Rd, SE-1g6</span></div>
+                    <div class="label__desc"><span>Street address 2 / Address line 2</span></div>
+                    <div class="addresses__example_block"> <span>#SE-1g6</span></div>
+                    <div class="label__desc"><span>City / Town</span></div>
+                    <div class="addresses__example_block"> <span>Wilmington</span></div>
+                    <div class="label__desc"><span>State / Province / Region</span></div>
+                    <div class="addresses__example_block"> <span>Delaware</span></div>
+                    <div class="label__desc"><span>ZIP / Zip code</span></div>
+                    <div class="addresses__example_block"> <span>19809</span></div>
+                    <div class="label__desc"><span>Country</span></div>
+                    <div class="addresses__example_block"> <span>United States</span></div>
+                  </div>
                 </li>
                 <li class="addresses__example_item"> 
                   <h4 class="addresses__example_title">Заполнение на amazon.com (имена полей оригинальные):</h4>
-                  <div class="label__desc"><span>Full name / Name</span></div>
-                  <div class="addresses__example_block"> <span>ShorpoevSE IlyasSE</span></div>
-                  <div class="label__desc"><span>First name / Name</span></div>
-                  <div class="addresses__example_block"> <span>IlyasSE</span></div>
-                  <div class="label__desc"><span>Last name / Surname</span></div>
-                  <div class="addresses__example_block"> <span>ShorpoevSE</span></div>
-                  <div class="label__desc"><span>Street address / Street address 1 / Address line / Address line 1</span></div>
-                  <div class="addresses__example_block"> <span>181 Edgemoor Rd, SE-1g6</span></div>
-                  <div class="label__desc"><span>Street address 2 / Address line 2</span></div>
-                  <div class="addresses__example_block"> <span>#SE-1g6</span></div>
-                  <div class="label__desc"><span>City / Town</span></div>
-                  <div class="addresses__example_block"> <span>Wilmington</span></div>
-                  <div class="label__desc"><span>State / Province / Region</span></div>
-                  <div class="addresses__example_block"> <span>Delaware</span></div>
-                  <div class="label__desc"><span>ZIP / Zip code</span></div>
-                  <div class="addresses__example_block"> <span>19809</span></div>
-                  <div class="label__desc"><span>Country</span></div>
-                  <div class="addresses__example_block"> <span>United States</span></div>
+                  <div class="addresses__example_content">
+                    <div class="label__desc"><span>Full name / Name</span></div>
+                    <div class="addresses__example_block"> <span>ShorpoevSE IlyasSE</span></div>
+                    <div class="label__desc"><span>First name / Name</span></div>
+                    <div class="addresses__example_block"> <span>IlyasSE</span></div>
+                    <div class="label__desc"><span>Last name / Surname</span></div>
+                    <div class="addresses__example_block"> <span>ShorpoevSE</span></div>
+                    <div class="label__desc"><span>Street address / Street address 1 / Address line / Address line 1</span></div>
+                    <div class="addresses__example_block"> <span>181 Edgemoor Rd, SE-1g6</span></div>
+                    <div class="label__desc"><span>Street address 2 / Address line 2</span></div>
+                    <div class="addresses__example_block"> <span>#SE-1g6</span></div>
+                    <div class="label__desc"><span>City / Town</span></div>
+                    <div class="addresses__example_block"> <span>Wilmington</span></div>
+                    <div class="label__desc"><span>State / Province / Region</span></div>
+                    <div class="addresses__example_block"> <span>Delaware</span></div>
+                    <div class="label__desc"><span>ZIP / Zip code</span></div>
+                    <div class="addresses__example_block"> <span>19809</span></div>
+                    <div class="label__desc"><span>Country</span></div>
+                    <div class="addresses__example_block"> <span>United States</span></div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -251,7 +261,7 @@
             <div class="orders__content orders__content_main active">
               <h4 class="order__title">Заказы</h4>
               <div class="order__table_wrap">
-                <table class="order__table"> 
+                <table class="order__table" id="table_order">
                   <thead class="order__table_thead"> 
                     <tr>
                       <td>Дата</td>
@@ -268,8 +278,8 @@
                   <tbody class="order__table_tbody">
                     <tr>
                       <td>05.02.2021</td>
-                      <td>42424242</td>
-                      <td>Иванов И.А </td>
+                      <td>42424241</td>
+                      <td>Иванов И.Т</td>
                       <td>Y5!HR)W/aTKAZ/</td>
                       <td>URL to load my settings on other computers quickly</td>
                       <td>1</td>
@@ -301,8 +311,8 @@
                     </tr>
                     <tr>
                       <td>05.02.2021</td>
-                      <td>42424242</td>
-                      <td>Иванов И.А </td>
+                      <td>42424243</td>
+                      <td>Иванов И.П</td>
                       <td>Y5!HR)W/aTKAZ/</td>
                       <td>URL to load my settings on other computers quickly</td>
                       <td>1</td>
@@ -312,8 +322,8 @@
                     </tr>
                     <tr>
                       <td>05.02.2021</td>
-                      <td>42424242</td>
-                      <td>Иванов И.А </td>
+                      <td>4242424</td>
+                      <td>Иванов И.Е </td>
                       <td>Y5!HR)W/aTKAZ/</td>
                       <td>URL to load my settings on other computers quickly</td>
                       <td>1</td>
@@ -612,6 +622,9 @@
                   <label class="settings_form_label">
                     <input class="addresses__main_form_input" type="text" required placeholder="Введите новый адрес">
                   </label>
+                  <div class="settings_form_map">
+                    <div id="map2"></div>
+                  </div>
                   <button class="admin__button" type="submit">Сохранить</button>
                 </form>
               </div>
